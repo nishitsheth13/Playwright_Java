@@ -5,6 +5,7 @@ import com.microsoft.playwright.BrowserContext;
 import com.microsoft.playwright.BrowserType;
 import com.microsoft.playwright.Playwright;
 
+import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Collections;
@@ -25,7 +26,10 @@ public class browserSelector extends baseClass {
                     .setArgs(Collections.singletonList("--start-maximized"))
                     .setHeadless(false));
 
-            Path videoDir = Paths.get("recordings/");
+            Path videoDir = Paths.get(System.getProperty("user.dir") +"/Recordings/");
+            if (!Files.exists(videoDir)) {
+                Files.createDirectories(videoDir);
+            }
 
             if (Recording) {
                 // Configure browser context to ignore HTTPS errors
@@ -50,12 +54,12 @@ public class browserSelector extends baseClass {
             }
             page.navigate(URL);
         } else if (brows.equalsIgnoreCase("edge")) {
-
+            Playwright playwright = Playwright.create();
             Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions()
                     .setChannel("msedge")
                     .setArgs(Collections.singletonList("--start-maximized"))
                     .setHeadless(false));
-            Path videoDir = Paths.get("recordings/");
+            Path videoDir = Paths.get(System.getProperty("user.dir") +"/Recordings/");
 
             if (Recording) {
                 // Configure browser context to ignore HTTPS errors
@@ -81,11 +85,11 @@ public class browserSelector extends baseClass {
             page.navigate(URL);
 
         } else if (brows.equalsIgnoreCase("firefox")) {
-
+            Playwright playwright = Playwright.create();
             Browser browser = playwright.firefox().launch(new BrowserType.LaunchOptions()
                     .setArgs(Collections.singletonList("--start-maximized"))
                     .setHeadless(false));
-            Path videoDir = Paths.get("recordings/");
+            Path videoDir = Paths.get(System.getProperty("user.dir") +"/Recordings/");
 
             if (Recording) {
                 // Configure browser context to ignore HTTPS errors
@@ -141,8 +145,10 @@ public class browserSelector extends baseClass {
                     .setArgs(Collections.singletonList("--start-maximized"))
                     .setHeadless(false));
 
-            Path videoDir = Paths.get("recordings/");
-
+            Path videoDir = Paths.get(System.getProperty("user.dir") +"/Recordings/");
+            if (!Files.exists(videoDir)) {
+                Files.createDirectories(videoDir);
+            }
             if (Recording) {
                 // Configure browser context to ignore HTTPS errors
                 Browser.NewContextOptions contextOptions = new Browser.NewContextOptions()
@@ -168,12 +174,12 @@ public class browserSelector extends baseClass {
 
 
         } else if (brows.equalsIgnoreCase("edge")) {
-
+            Playwright playwright = Playwright.create();
             Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions()
                     .setChannel("msedge")
                     .setArgs(Collections.singletonList("--start-maximized"))
                     .setHeadless(false));
-            Path videoDir = Paths.get("recordings/");
+            Path videoDir = Paths.get(System.getProperty("user.dir") +"/Recordings/");
 
             if (Recording) {
                 // Configure browser context to ignore HTTPS errors
@@ -199,11 +205,11 @@ public class browserSelector extends baseClass {
             page.navigate(URL);
 
         } else if (brows.equalsIgnoreCase("firefox")) {
-
+            Playwright playwright = Playwright.create();
             Browser browser = playwright.firefox().launch(new BrowserType.LaunchOptions()
                     .setArgs(Collections.singletonList("--start-maximized"))
                     .setHeadless(false));
-            Path videoDir = Paths.get("recordings/");
+            Path videoDir = Paths.get(System.getProperty("user.dir") +"/Recordings/");
 
             if (Recording) {
                 // Configure browser context to ignore HTTPS errors
@@ -236,6 +242,7 @@ public class browserSelector extends baseClass {
 
     public static void closeBrowser() throws Exception {
         if (page != null) {
+
             page.close();
         }
         if (context != null) {

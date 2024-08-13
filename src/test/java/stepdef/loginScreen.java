@@ -49,7 +49,7 @@ public class loginScreen extends browserSelector {
 
     @Then("Verify User should be able to redirect to HomePage")
     public void verifyUserShouldBeAbleToRedirectToHomePage() throws InterruptedException {
-        sleep(100);
+        sleep(1000);
         Assert.assertTrue(utils.isElementPresent(loginPage.UserIcon));
         System.out.println("Verify User is redirected to HomePage");
     }

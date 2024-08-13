@@ -4,10 +4,7 @@ package basicTemplate.pages;
 import basicTemplate.configs.browserSelector;
 import basicTemplate.configs.loadProps;
 import basicTemplate.configs.utils;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 
 public class loginPage extends utils {
@@ -46,7 +43,7 @@ public class loginPage extends utils {
 
     @BeforeTest
     @Parameters("Browser")
-    public void launchBrowser(String Browser) throws Exception {
+    public void launchBrowser(@Optional("chrome")String Browser) throws Exception {
         browserSelector.LaunchBrowser(Browser);
     }
 

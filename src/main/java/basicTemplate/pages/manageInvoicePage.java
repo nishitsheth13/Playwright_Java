@@ -325,7 +325,7 @@ public class manageInvoicePage extends utils {
         sleep(5000);
         clickOnElement(ClickOnPath);
         clickOnElement(SelectPath);
-        sleep(100);
+        sleep(1000);
         clickOnElement(clickOnStartDateCalenderOnListing);
         sleep(2000);
         clickOnElement(clickOnStartMonthCalender);
