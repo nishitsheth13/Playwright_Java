@@ -70,9 +70,9 @@ public class myRecording extends ScreenRecorder {
         } else if (!movieFolder.isDirectory()) {
             throw new IOException("\"" + movieFolder + "\" is not a directory.");
         }
-        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss");
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss");
         return new File(movieFolder,
-                "Recording" + "-" + dateFormat.format(new Date()) + "." + Registry.getInstance().getExtension(fileFormat));
+                "Recording" + "_" + dateFormat.format(new Date()) + "." + Registry.getInstance().getExtension(fileFormat));
 
     }
 

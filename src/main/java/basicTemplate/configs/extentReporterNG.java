@@ -15,7 +15,7 @@ public class extentReporterNG {
 
     public static ExtentReports extentReportGenerator() {
 
-        String path = System.getProperty("user.dir") + "/reports/ExtentReport/extentReport.html";
+        String path = System.getProperty("user.dir") + "/executionReport/reports/ExtentReport/extentReport.html";
         ExtentSparkReporter reporter = new ExtentSparkReporter(path);
         reporter.config().setReportName("MRI Energy Automation Test Report");
         reporter.config().setDocumentTitle("MRI Energy Test Results");
@@ -28,7 +28,7 @@ public class extentReporterNG {
         extent.setSystemInfo("Tester Name ", "Nishit Sheth");
         extent.setSystemInfo("Build No ", "1.0");
         extent.setSystemInfo("os", "Windows");
-        htmlReporter = new ExtentSparkReporter(System.getProperty("user.dir") + "/reports/SparkReport");
+        htmlReporter = new ExtentSparkReporter(System.getProperty("user.dir") + "/executionReport/reports/SparkReport/index.html");
         extent.attachReporter(htmlReporter);
         htmlReporter.config().setCss("css-string");
         htmlReporter.config().setDocumentTitle("Automation Test Report");

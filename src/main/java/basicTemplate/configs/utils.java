@@ -14,6 +14,7 @@ import java.util.Date;
 public class utils extends baseClass {
 
     public static void clickOnElement(String element) {
+        isElementPresent(element);
         page.locator(element).click();
     }
 
@@ -27,13 +28,14 @@ public class utils extends baseClass {
 
     public static void enterText(String element, String inputText) {
         if (inputText != null && !inputText.isEmpty()) {
+            isElementPresent(element);
             clickOnElement(element);
             page.locator(element).fill(inputText);
         }
     }
 
     public static String timeStamp() {
-        DateFormat dateFormat = new SimpleDateFormat("MMDDYYYY-HHmmss");
+        DateFormat dateFormat = new SimpleDateFormat("MM_DD_YYYY_HHmmss");
         Date date = new Date();
         return dateFormat.format(date);
     }
@@ -45,20 +47,15 @@ public class utils extends baseClass {
 
     public static void UploadFile(String by, String args) {
         Locator fileInput = page.locator(by);
-        fileInput.setInputFiles(Paths.get("C://Users//Nishit.Sheth//IdeaProjects//MRIEnergy_AutomationSuite//Extent-Report//PdfReport//extentPdf.pdf"));
+        fileInput.setInputFiles(Paths.get("C://QA_Resources//Automation Projects//AutomationScripts//Playwright_Java//executionReport//Extent-Report//PdfReport//extentPdf.pdf"));
     }
-
- /*   public static void selectElementByIndex(String by, int integer) {
-        Select select = new Select(page.locator(by));
-        select.selectByIndex(integer);
-    }*/
 
     public String getScreenShotPath(String TestName) throws IOException, AWTException {
         page.screenshot(new Page.ScreenshotOptions()
-                .setPath(Paths.get(System.getProperty("user.dir") + "//Reports//" + "//Screenshots//" + TestName + utils.timeStamp() + ".png"))
+                .setPath(Paths.get("C://QA_Resources//Automation Projects/AutomationScripts/Playwright_Java/executionReport/Reports" + "/Screenshots/" + TestName + utils.timeStamp() + ".png"))
                 .setFullPage(true));
 
-        String destPath = System.getProperty("user.dir") + "//Reports//" + "//Screenshots//" + TestName + utils.timeStamp() + ".png";
+        String destPath =  "../Screenshots/" + TestName + utils.timeStamp() + ".png";
 
         return destPath;
     }

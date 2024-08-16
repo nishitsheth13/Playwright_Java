@@ -5,23 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e3722138-30a0-44e1-9737-102fcf9fd4dd" name="Changes" comment="initial Commit">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/stepdef/treeConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/extent-Report/htmlReport/ExtentHtml.html" beforeDir="false" afterPath="$PROJECT_DIR$/extent-Report/htmlReport/ExtentHtml.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/extent-Report/pdfReport/ExtentPdf.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/extent-Report/pdfReport/ExtentPdf.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/extent-Report/sparkReport/Spark.html" beforeDir="false" afterPath="$PROJECT_DIR$/extent-Report/sparkReport/Spark.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/extentReport/extentReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/extentReport/extentReport.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/sparkReport/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/sparkReport/Index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extent-Report/htmlReport/ExtentHtml.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extent-Report/pdfReport/ExtentPdf.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/feature/treeConfiguration.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extent-Report/sparkReport/Spark.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/extentReport/extentReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/sparkReport/Index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/basicTemplate/configs/browserSelector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basicTemplate/configs/browserSelector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/basicTemplate/configs/extentReporterNG.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basicTemplate/configs/extentReporterNG.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/basicTemplate/configs/listener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basicTemplate/configs/listener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/basicTemplate/configs/myRecording.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basicTemplate/configs/myRecording.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/basicTemplate/configs/utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basicTemplate/configs/utils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/basicTemplate/pages/loginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basicTemplate/pages/loginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/basicTemplate/pages/manageInvoicePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basicTemplate/pages/manageInvoicePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdef/loginScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdef/loginScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/configurations.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/configurations.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/extent.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/extent.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -47,6 +62,7 @@
     <setting file="jar://$MAVEN_REPOSITORY$/io/cucumber/cucumber-core/7.15.0/cucumber-core-7.15.0-sources.jar!/io/cucumber/core/runner/TestCase.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$MAVEN_REPOSITORY$/io/cucumber/cucumber-core/7.15.0/cucumber-core-7.15.0-sources.jar!/io/cucumber/core/runner/TestStep.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$MAVEN_REPOSITORY$/io/cucumber/cucumber-java/7.15.0/cucumber-java-7.15.0-sources.jar!/io/cucumber/java/Invoker.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/testng/testng/7.9.0/testng-7.9.0-sources.jar!/org/testng/internal/invokers/MethodInvocationHelper.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
@@ -54,72 +70,84 @@
   <component name="ProjectId" id="2kMZwnTpGvc9LDacGolrT4aceAk" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
+    <option name="flattenModules" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Cucumber Java.Feature: loginPage.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Scenario: Creating a new invoice.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Scenario: Deleting invoice.executor&quot;: &quot;Debug&quot;,
-    &quot;Cucumber Java.Scenario: Verify User is able to access the MRI Energy application.executor&quot;: &quot;Debug&quot;,
-    &quot;Cucumber Java.Scenario: Verify User is redirected to correct URL.executor&quot;: &quot;Debug&quot;,
-    &quot;Cucumber Java.Scenario: Verify that user is able to access Invoice Validation.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;TestNG.C:/QA_Resources/Automation Projects/AutomationScripts/Playwright_Java/src/test/testng.xml.executor&quot;: &quot;Debug&quot;,
-    &quot;TestNG.loginPage (1).executor&quot;: &quot;Debug&quot;,
-    &quot;TestNG.loginPage.executor&quot;: &quot;Debug&quot;,
-    &quot;TestNG.loginPage.login.executor&quot;: &quot;Debug&quot;,
-    &quot;TestNG.manageInvoicePage.deleteInvoice.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.manageInvoicePage.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.manageInvoicePage.redirectToInvoiceList.executor&quot;: &quot;Debug&quot;,
-    &quot;TestNG.testRunner.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.testRunner.runScenario (1).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.testRunner.runScenario.executor&quot;: &quot;Debug&quot;,
-    &quot;TestNG.treeConfigurations.configTree.executor&quot;: &quot;Debug&quot;,
-    &quot;TestNG.treeConfigurations.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/QA_Resources/Automation Projects/AutomationScripts/Playwright_Java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Cucumber Java.Feature: loginPage.executor": "Run",
+    "Cucumber Java.Feature: treeConfiguration.executor": "Debug",
+    "Cucumber Java.Scenario: Creating a new invoice.executor": "Run",
+    "Cucumber Java.Scenario: Deleting invoice.executor": "Debug",
+    "Cucumber Java.Scenario: Verify User is able to access the MRI Energy application.executor": "Run",
+    "Cucumber Java.Scenario: Verify User is redirected to correct URL.executor": "Debug",
+    "Cucumber Java.Scenario: Verify that user is able to access Invoice Validation.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.C:/QA_Resources/Automation Projects/AutomationScripts/Playwright_Java/src/test/testng.xml (1).executor": "Debug",
+    "TestNG.C:/QA_Resources/Automation Projects/AutomationScripts/Playwright_Java/src/test/testng.xml.executor": "Debug",
+    "TestNG.C:/Users/Nishit.Sheth/AppData/Local/JetBrains/IdeaIC2024.1/temp-testng-customsuite.xml.executor": "Run",
+    "TestNG.loginPage (1).executor": "Debug",
+    "TestNG.loginPage.executor": "Debug",
+    "TestNG.loginPage.login.executor": "Debug",
+    "TestNG.manageInvoicePage.deleteInvoice.executor": "Run",
+    "TestNG.manageInvoicePage.executor": "Run",
+    "TestNG.manageInvoicePage.redirectToInvoiceList.executor": "Debug",
+    "TestNG.testRunner.executor": "Run",
+    "TestNG.testRunner.runScenario (1).executor": "Debug",
+    "TestNG.testRunner.runScenario (2).executor": "Debug",
+    "TestNG.testRunner.runScenario.executor": "Run",
+    "TestNG.treeConfigurations.configTree.executor": "Run",
+    "TestNG.treeConfigurations.executor": "Run",
+    "com.google.cloudcode.ide_session_index": "20240814_0000",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/QA_Resources/Automation Projects/AutomationScripts/Playwright_Java",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
-  <component name="RunManager" selected="TestNG.loginPage (1)">
-    <configuration name="Scenario: Verify User is redirected to correct URL" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/feature/loginPage.feature" />
-      <option name="GLUE" value="stepdef" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\QA_Resources\Automation Projects\AutomationScripts\Playwright_Java\executionReport" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.testRunner.runScenario (2)">
+    <configuration name="C:/QA_Resources/Automation Projects/AutomationScripts/Playwright_Java/src/test/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="PlaywrightWithJava" />
-      <option name="NAME_FILTER" value="^Verify User is redirected to correct URL$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Verify User is redirected to correct URL$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Verify User is redirected to correct URL" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/testng.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners>
+        <listener class="basicTemplate.configs.listener" />
+      </listeners>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="loginPage (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="testRunner" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="PlaywrightWithJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="basicTemplate.pages.*" />
+          <option name="PATTERN" value="runner.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="basicTemplate.pages" />
-      <option name="MAIN_CLASS_NAME" value="basicTemplate.pages.loginPage" />
+      <option name="PACKAGE_NAME" value="runner" />
+      <option name="MAIN_CLASS_NAME" value="runner.testRunner" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -127,66 +155,136 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="loginPage" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="testRunner.runScenario (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="PlaywrightWithJava" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="basicTemplate.pages.*" />
+          <option name="PATTERN" value="runner.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="basicTemplate.pages" />
-      <option name="MAIN_CLASS_NAME" value="basicTemplate.pages.loginPage" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="loginPage.login" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="PlaywrightWithJava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="basicTemplate.pages.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="basicTemplate.pages" />
-      <option name="MAIN_CLASS_NAME" value="basicTemplate.pages.loginPage" />
-      <option name="METHOD_NAME" value="login" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/testng.xml" />
+      <option name="PACKAGE_NAME" value="runner" />
+      <option name="MAIN_CLASS_NAME" value="runner.testRunner" />
+      <option name="METHOD_NAME" value="runScenario" />
+      <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="5" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="PROPERTIES_FILE" value="" />
       <properties />
-      <listeners />
+      <listeners>
+        <listener class="basicTemplate.configs.listener" />
+      </listeners>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="manageInvoicePage.deleteInvoice" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="testRunner.runScenario (2)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="PlaywrightWithJava" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="runner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/testng.xml" />
+      <option name="PACKAGE_NAME" value="runner" />
+      <option name="MAIN_CLASS_NAME" value="runner.testRunner" />
+      <option name="METHOD_NAME" value="runScenario" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="11" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners>
+        <listener class="basicTemplate.configs.listener" />
+      </listeners>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testRunner.runScenario" type="TestNG" nameIsGenerated="true">
+      <module name="PlaywrightWithJava" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="runner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="runner" />
+      <option name="MAIN_CLASS_NAME" value="runner.testRunner" />
+      <option name="METHOD_NAME" value="runScenario" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="5" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="true" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners>
+        <listener class="basicTemplate.configs.listener" />
+      </listeners>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="treeConfigurations.configTree" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="PlaywrightWithJava" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="basicTemplate.pages.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="basicTemplate.pages" />
-      <option name="MAIN_CLASS_NAME" value="basicTemplate.pages.manageInvoicePage" />
-      <option name="METHOD_NAME" value="deleteInvoice" />
+      <option name="MAIN_CLASS_NAME" value="basicTemplate.pages.treeConfigurations" />
+      <option name="METHOD_NAME" value="configTree" />
+      <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
       <properties />
-      <listeners />
+      <listeners>
+        <listener class="basicTemplate.configs.listener" />
+      </listeners>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="TestNG.testRunner.runScenario" />
+      <item itemvalue="TestNG.testRunner.runScenario (1)" />
+      <item itemvalue="TestNG.testRunner.runScenario (2)" />
+      <item itemvalue="TestNG.testRunner" />
+      <item itemvalue="TestNG.C:/QA_Resources/Automation Projects/AutomationScripts/Playwright_Java/src/test/testng.xml" />
+      <item itemvalue="TestNG.treeConfigurations.configTree" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.loginPage (1)" />
-        <item itemvalue="TestNG.loginPage.login" />
-        <item itemvalue="TestNG.manageInvoicePage.deleteInvoice" />
-        <item itemvalue="TestNG.loginPage" />
-        <item itemvalue="Cucumber Java.Scenario: Verify User is redirected to correct URL" />
+        <item itemvalue="TestNG.testRunner.runScenario (2)" />
+        <item itemvalue="TestNG.C:/QA_Resources/Automation Projects/AutomationScripts/Playwright_Java/src/test/testng.xml" />
+        <item itemvalue="TestNG.testRunner.runScenario (1)" />
+        <item itemvalue="TestNG.treeConfigurations.configTree" />
+        <item itemvalue="TestNG.testRunner" />
       </list>
     </recent_temporary>
   </component>
@@ -232,59 +330,29 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/basicTemplate/configs/myRecording.java</url>
-          <line>73</line>
-          <option name="timeStamp" value="3" />
+          <url>file://$PROJECT_DIR$/src/main/java/basicTemplate/pages/treeConfigurations.java</url>
+          <line>120</line>
+          <option name="timeStamp" value="52" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/basicTemplate/configs/myRecording.java</url>
-          <line>70</line>
-          <option name="timeStamp" value="4" />
+          <url>file://$PROJECT_DIR$/src/main/java/basicTemplate/configs/listener.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="53" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/stepdef/loginScreen.java</url>
-          <line>52</line>
-          <option name="timeStamp" value="13" />
+          <url>file://$PROJECT_DIR$/src/main/java/basicTemplate/configs/listener.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="54" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/basicTemplate/configs/browserSelector.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="15" />
+          <url>file://$PROJECT_DIR$/src/main/java/basicTemplate/configs/listener.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="55" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/basicTemplate/pages/loginPage.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/basicTemplate/pages/loginPage.java</url>
-          <line>46</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/basicTemplate/configs/browserSelector.java</url>
-          <line>151</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/basicTemplate/configs/browserSelector.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/basicTemplate/configs/browserSelector.java</url>
-          <line>141</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/basicTemplate/configs/myRecording.java</url>
-          <line>55</line>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/basicTemplate/configs/myRecording.java</url>
-          <line>35</line>
-          <option name="timeStamp" value="22" />
+          <url>file://$PROJECT_DIR$/src/main/java/basicTemplate/configs/listener.java</url>
+          <line>71</line>
+          <option name="timeStamp" value="56" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

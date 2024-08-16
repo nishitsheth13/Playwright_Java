@@ -30,29 +30,18 @@ public class browserSelector extends baseClass {
             if (!Files.exists(videoDir)) {
                 Files.createDirectories(videoDir);
             }
-
+            Browser.NewContextOptions contextOptions = new Browser.NewContextOptions()
+                    .setViewportSize(null)
+                    .setIgnoreHTTPSErrors(true);
+            BrowserContext context = browser.newContext(contextOptions);
+            context.setDefaultTimeout(20000);
+            context.setDefaultNavigationTimeout(20000);
+            page = context.newPage();
             if (Recording) {
-                // Configure browser context to ignore HTTPS errors
-                Browser.NewContextOptions contextOptions = new Browser.NewContextOptions()
-                        .setViewportSize(null)
-                        .setIgnoreHTTPSErrors(true)
-                        .setRecordVideoDir(videoDir)
-                        .setRecordVideoSize(1280, 720);
-                BrowserContext context = browser.newContext(contextOptions);
-                context.setDefaultTimeout(45000);
-                context.setDefaultNavigationTimeout(45000);
-                page = context.newPage();
-            } else {
-                Browser.NewContextOptions contextOptions = new Browser.NewContextOptions()
-                        .setViewportSize(null)
-                        .setIgnoreHTTPSErrors(true);
-                BrowserContext context = browser.newContext(contextOptions);
-                context.setDefaultTimeout(45000);
-                context.setDefaultNavigationTimeout(45000);
-                page = context.newPage();
-
+                myRecording.startRecording();
             }
             page.navigate(URL);
+
         } else if (brows.equalsIgnoreCase("edge")) {
             Playwright playwright = Playwright.create();
             Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions()
@@ -60,58 +49,41 @@ public class browserSelector extends baseClass {
                     .setArgs(Collections.singletonList("--start-maximized"))
                     .setHeadless(false));
             Path videoDir = Paths.get(System.getProperty("user.dir") +"/Recordings/");
-
-            if (Recording) {
-                // Configure browser context to ignore HTTPS errors
-                Browser.NewContextOptions contextOptions = new Browser.NewContextOptions()
-                        .setViewportSize(null)
-                        .setIgnoreHTTPSErrors(true)
-                        .setRecordVideoDir(videoDir)
-                        .setRecordVideoSize(1280, 720);
-                BrowserContext context = browser.newContext(contextOptions);
-                context.setDefaultTimeout(45000);
-                context.setDefaultNavigationTimeout(45000);
-                page = context.newPage();
-            } else {
-                Browser.NewContextOptions contextOptions = new Browser.NewContextOptions()
-                        .setViewportSize(null)
-                        .setIgnoreHTTPSErrors(true);
-                BrowserContext context = browser.newContext(contextOptions);
-                context.setDefaultTimeout(45000);
-                context.setDefaultNavigationTimeout(45000);
-                page = context.newPage();
-
+            if (!Files.exists(videoDir)) {
+                Files.createDirectories(videoDir);
             }
-            page.navigate(URL);
+            Browser.NewContextOptions contextOptions = new Browser.NewContextOptions()
+                    .setViewportSize(null)
+                    .setIgnoreHTTPSErrors(true);
+            BrowserContext context = browser.newContext(contextOptions);
+            context.setDefaultTimeout(20000);
+            context.setDefaultNavigationTimeout(20000);
+            page = context.newPage();
+            if (Recording) {
+                myRecording.startRecording();
+            }
 
+            page.navigate(URL);
         } else if (brows.equalsIgnoreCase("firefox")) {
             Playwright playwright = Playwright.create();
             Browser browser = playwright.firefox().launch(new BrowserType.LaunchOptions()
                     .setArgs(Collections.singletonList("--start-maximized"))
                     .setHeadless(false));
             Path videoDir = Paths.get(System.getProperty("user.dir") +"/Recordings/");
-
-            if (Recording) {
-                // Configure browser context to ignore HTTPS errors
-                Browser.NewContextOptions contextOptions = new Browser.NewContextOptions()
-                        .setViewportSize(null)
-                        .setIgnoreHTTPSErrors(true)
-                        .setRecordVideoDir(videoDir)
-                        .setRecordVideoSize(1280, 720);
-                BrowserContext context = browser.newContext(contextOptions);
-                context.setDefaultTimeout(45000);
-                context.setDefaultNavigationTimeout(45000);
-                page = context.newPage();
-            } else {
-                Browser.NewContextOptions contextOptions = new Browser.NewContextOptions()
-                        .setViewportSize(null)
-                        .setIgnoreHTTPSErrors(true);
-                BrowserContext context = browser.newContext(contextOptions);
-                context.setDefaultTimeout(45000);
-                context.setDefaultNavigationTimeout(45000);
-                page = context.newPage();
-
+            if (!Files.exists(videoDir)) {
+                Files.createDirectories(videoDir);
             }
+            Browser.NewContextOptions contextOptions = new Browser.NewContextOptions()
+                    .setViewportSize(null)
+                    .setIgnoreHTTPSErrors(true);
+            BrowserContext context = browser.newContext(contextOptions);
+            context.setDefaultTimeout(20000);
+            context.setDefaultNavigationTimeout(20000);
+            page = context.newPage();
+            if (Recording) {
+                myRecording.startRecording();
+            }
+
             page.navigate(URL);
         } else {
             System.out.println("This Browser is not found in your system.");
@@ -121,8 +93,10 @@ public class browserSelector extends baseClass {
 
 
     public static void tearDown() throws Exception {
+
         if (page != null) {
             page.close();
+            myRecording.stopRecording();
         }
         if (context != null) {
             context.close();
@@ -137,7 +111,6 @@ public class browserSelector extends baseClass {
 
 
     //For Parallel Execution using Testng XML
-
     public static void LaunchBrowser(String brows) throws Exception {
         if (brows.equalsIgnoreCase("chrome")) {
             Playwright playwright = Playwright.create();
@@ -149,27 +122,18 @@ public class browserSelector extends baseClass {
             if (!Files.exists(videoDir)) {
                 Files.createDirectories(videoDir);
             }
-            if (Recording) {
-                // Configure browser context to ignore HTTPS errors
-                Browser.NewContextOptions contextOptions = new Browser.NewContextOptions()
-                        .setViewportSize(null)
-                        .setIgnoreHTTPSErrors(true)
-                        .setRecordVideoDir(videoDir)
-                        .setRecordVideoSize(1280, 720);
-                BrowserContext context = browser.newContext(contextOptions);
-                context.setDefaultTimeout(45000);
-                context.setDefaultNavigationTimeout(45000);
-                page = context.newPage();
-            } else {
+
                 Browser.NewContextOptions contextOptions = new Browser.NewContextOptions()
                         .setViewportSize(null)
                         .setIgnoreHTTPSErrors(true);
                 BrowserContext context = browser.newContext(contextOptions);
-                context.setDefaultTimeout(45000);
-                context.setDefaultNavigationTimeout(45000);
+            context.setDefaultTimeout(20000);
+            context.setDefaultNavigationTimeout(20000);
                 page = context.newPage();
-
+            if (Recording) {
+                myRecording.startRecording();
             }
+
             page.navigate(URL);
 
 
@@ -180,28 +144,20 @@ public class browserSelector extends baseClass {
                     .setArgs(Collections.singletonList("--start-maximized"))
                     .setHeadless(false));
             Path videoDir = Paths.get(System.getProperty("user.dir") +"/Recordings/");
-
-            if (Recording) {
-                // Configure browser context to ignore HTTPS errors
-                Browser.NewContextOptions contextOptions = new Browser.NewContextOptions()
-                        .setViewportSize(null)
-                        .setIgnoreHTTPSErrors(true)
-                        .setRecordVideoDir(videoDir)
-                        .setRecordVideoSize(1280, 720);
-                BrowserContext context = browser.newContext(contextOptions);
-                context.setDefaultTimeout(45000);
-                context.setDefaultNavigationTimeout(45000);
-                page = context.newPage();
-            } else {
-                Browser.NewContextOptions contextOptions = new Browser.NewContextOptions()
-                        .setViewportSize(null)
-                        .setIgnoreHTTPSErrors(true);
-                BrowserContext context = browser.newContext(contextOptions);
-                context.setDefaultTimeout(45000);
-                context.setDefaultNavigationTimeout(45000);
-                page = context.newPage();
-
+            if (!Files.exists(videoDir)) {
+                Files.createDirectories(videoDir);
             }
+            Browser.NewContextOptions contextOptions = new Browser.NewContextOptions()
+                    .setViewportSize(null)
+                    .setIgnoreHTTPSErrors(true);
+            BrowserContext context = browser.newContext(contextOptions);
+            context.setDefaultTimeout(20000);
+            context.setDefaultNavigationTimeout(20000);
+            page = context.newPage();
+            if (Recording) {
+                myRecording.startRecording();
+            }
+
             page.navigate(URL);
 
         } else if (brows.equalsIgnoreCase("firefox")) {
@@ -210,30 +166,21 @@ public class browserSelector extends baseClass {
                     .setArgs(Collections.singletonList("--start-maximized"))
                     .setHeadless(false));
             Path videoDir = Paths.get(System.getProperty("user.dir") +"/Recordings/");
-
-            if (Recording) {
-                // Configure browser context to ignore HTTPS errors
-                Browser.NewContextOptions contextOptions = new Browser.NewContextOptions()
-                        .setViewportSize(null)
-                        .setIgnoreHTTPSErrors(true)
-                        .setRecordVideoDir(videoDir)
-                        .setRecordVideoSize(1280, 720);
-                BrowserContext context = browser.newContext(contextOptions);
-                context.setDefaultTimeout(45000);
-                context.setDefaultNavigationTimeout(45000);
-                page = context.newPage();
-            } else {
-                Browser.NewContextOptions contextOptions = new Browser.NewContextOptions()
-                        .setViewportSize(null)
-                        .setIgnoreHTTPSErrors(true);
-                BrowserContext context = browser.newContext(contextOptions);
-                context.setDefaultTimeout(45000);
-                context.setDefaultNavigationTimeout(45000);
-                page = context.newPage();
-
+            if (!Files.exists(videoDir)) {
+                Files.createDirectories(videoDir);
             }
-            page.navigate(URL);
+            Browser.NewContextOptions contextOptions = new Browser.NewContextOptions()
+                    .setViewportSize(null)
+                    .setIgnoreHTTPSErrors(true);
+            BrowserContext context = browser.newContext(contextOptions);
+            context.setDefaultTimeout(20000);
+            context.setDefaultNavigationTimeout(20000);
+            page = context.newPage();
+            if (Recording) {
+                myRecording.startRecording();
+            }
 
+            page.navigate(URL);
         } else {
             System.out.println("This Browser is not found in your system.");
         }
@@ -242,8 +189,8 @@ public class browserSelector extends baseClass {
 
     public static void closeBrowser() throws Exception {
         if (page != null) {
-
             page.close();
+            myRecording.stopRecording();
         }
         if (context != null) {
             context.close();

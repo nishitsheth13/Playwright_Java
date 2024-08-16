@@ -33,46 +33,53 @@ public class listener extends utils implements ITestListener {
 
     public void onTestFailure(ITestResult result) {
 
-        extentTest.get().fail(result.getThrowable());
-        Object obj = result.getInstance();
-        Class<?> cl = result.getTestClass().getRealClass();
-
-
         try {
-            String name = getScreenShotPath(result.getName());
-            extentTest.get().addScreenCaptureFromPath(name);
-//            extentTest.get().addScreenCaptureFromBase64String(getScreenBase64(result.getName()));
+            extentTest.get().addScreenCaptureFromPath(getScreenShotPath(result.getMethod().getMethodName()));
         } catch (IOException e) {
-            e.printStackTrace();
+            throw new RuntimeException(e);
         } catch (AWTException e) {
             throw new RuntimeException(e);
         }
+        extentTest.get().log(Status.FAIL, "Test Failed");
+        extentTest.get().fail(result.getThrowable());
 
+    }
+
+
+    public void onTestSkipped(ITestResult result) {
+        try {
+            extentTest.get().addScreenCaptureFromPath(getScreenShotPath(result.getMethod().getMethodName()));
+            extentTest.get().log(Status.SKIP, "Test Skipped");
+        } catch (IOException | AWTException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+
+    public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
         try {
             extentTest.get().addScreenCaptureFromPath(getScreenShotPath(result.getMethod().getMethodName()), result.getMethod().getMethodName());
+            extentTest.get().log(Status.WARNING, "testFailedButWithinSuccessPercentage");
         } catch (IOException | AWTException e) {
             e.printStackTrace();
         }
     }
 
 
-    public void onTestSkipped(ITestResult result) {
-        extentTest.get().log(Status.SKIP, "Skipped");
-    }
-
-
-    public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
-
-    }
-
-
     public void onTestFailedWithTimeout(ITestResult result) {
+        try {
+            extentTest.get().addScreenCaptureFromPath(getScreenShotPath(result.getMethod().getMethodName()), result.getMethod().getMethodName());
+            extentTest.get().log(Status.WARNING, "TimeOut");
+        } catch (IOException | AWTException e) {
+            e.printStackTrace();
+        }
+
 
     }
 
 
     public void onStart(ITestContext context) {
-
     }
 
 

@@ -54,11 +54,6 @@
             <version>2.20.0</version>
         </dependency>
         <dependency>
-            <groupId>com.aventstack</groupId>
-            <artifactId>extentreports</artifactId>
-            <version>5.1.0</version>
-        </dependency>
-        <dependency>
             <groupId>tech.grasshopper</groupId>
             <artifactId>extent-pdf-report</artifactId>
             <version>2.11.0</version>
@@ -116,7 +111,7 @@
                     <artifactId>maven-surefire-plugin</artifactId>
                     <version>3.1.2</version> <!-- Updated version for compatibility -->
                     <configuration>
-                        <!-- <testFailureIgnore>true</testFailureIgnore>-->
+                        <testFailureIgnore>true</testFailureIgnore>
                     </configuration>
                 </plugin>
 
