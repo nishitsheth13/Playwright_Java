@@ -70,6 +70,7 @@ public class listener extends utils implements ITestListener {
     public void onTestFailedWithTimeout(ITestResult result) {
         try {
             extentTest.get().addScreenCaptureFromPath(getScreenShotPath(result.getMethod().getMethodName()), result.getMethod().getMethodName());
+            extentTest.get().fail(result.getThrowable());
             extentTest.get().log(Status.WARNING, "TimeOut");
         } catch (IOException | AWTException e) {
             e.printStackTrace();

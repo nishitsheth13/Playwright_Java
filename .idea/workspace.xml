@@ -5,23 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e3722138-30a0-44e1-9737-102fcf9fd4dd" name="Changes" comment="initial Commit">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepdef/treeConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/extent-Report/htmlReport/ExtentHtml.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/extent-Report/pdfReport/ExtentPdf.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/feature/treeConfiguration.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/extent-Report/sparkReport/Spark.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/extentReport/extentReport.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/sparkReport/Index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/basicTemplate/configs/browserSelector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basicTemplate/configs/browserSelector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/basicTemplate/configs/extentReporterNG.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basicTemplate/configs/extentReporterNG.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/executionReport/extent-Report/htmlReport/ExtentHtml.html" beforeDir="false" afterPath="$PROJECT_DIR$/executionReport/extent-Report/htmlReport/ExtentHtml.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/executionReport/extent-Report/pdfReport/ExtentPdf.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/executionReport/extent-Report/pdfReport/ExtentPdf.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/executionReport/extent-Report/sparkReport/Spark.html" beforeDir="false" afterPath="$PROJECT_DIR$/executionReport/extent-Report/sparkReport/Spark.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/executionReport/reports/extentReport/extentReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/executionReport/reports/extentReport/extentReport.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/executionReport/reports/sparkReport/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/executionReport/reports/sparkReport/Index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/basicTemplate/configs/listener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basicTemplate/configs/listener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/basicTemplate/configs/myRecording.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basicTemplate/configs/myRecording.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/basicTemplate/configs/utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basicTemplate/configs/utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/basicTemplate/pages/loginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basicTemplate/pages/loginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/extent.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/extent.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/Default Suite/Playwright_Java.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/Default Suite/Playwright_Java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/Default Suite/Playwright_Java.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/Default Suite/Playwright_Java.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +56,7 @@
     <setting file="jar://$MAVEN_REPOSITORY$/io/cucumber/cucumber-core/7.15.0/cucumber-core-7.15.0-sources.jar!/io/cucumber/core/runner/TestStep.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$MAVEN_REPOSITORY$/io/cucumber/cucumber-java/7.15.0/cucumber-java-7.15.0-sources.jar!/io/cucumber/java/Invoker.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$MAVEN_REPOSITORY$/org/testng/testng/7.9.0/testng-7.9.0-sources.jar!/org/testng/internal/invokers/MethodInvocationHelper.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/testng/testng/7.9.0/testng-7.9.0-sources.jar!/org/testng/internal/invokers/MethodRunner.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
@@ -86,7 +80,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "TestNG.C:/QA_Resources/Automation Projects/AutomationScripts/Playwright_Java/src/test/testng.xml (1).executor": "Debug",
-    "TestNG.C:/QA_Resources/Automation Projects/AutomationScripts/Playwright_Java/src/test/testng.xml.executor": "Debug",
+    "TestNG.C:/QA_Resources/Automation Projects/AutomationScripts/Playwright_Java/src/test/testng.xml.executor": "Run",
     "TestNG.C:/Users/Nishit.Sheth/AppData/Local/JetBrains/IdeaIC2024.1/temp-testng-customsuite.xml.executor": "Run",
     "TestNG.loginPage (1).executor": "Debug",
     "TestNG.loginPage.executor": "Debug",
@@ -96,7 +90,7 @@
     "TestNG.manageInvoicePage.redirectToInvoiceList.executor": "Debug",
     "TestNG.testRunner.executor": "Run",
     "TestNG.testRunner.runScenario (1).executor": "Debug",
-    "TestNG.testRunner.runScenario (2).executor": "Debug",
+    "TestNG.testRunner.runScenario (2).executor": "Run",
     "TestNG.testRunner.runScenario.executor": "Run",
     "TestNG.treeConfigurations.configTree.executor": "Run",
     "TestNG.treeConfigurations.executor": "Run",
@@ -116,7 +110,7 @@
       <recent name="C:\QA_Resources\Automation Projects\AutomationScripts\Playwright_Java\executionReport" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.testRunner.runScenario (2)">
+  <component name="RunManager" selected="TestNG.treeConfigurations.configTree">
     <configuration name="C:/QA_Resources/Automation Projects/AutomationScripts/Playwright_Java/src/test/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="PlaywrightWithJava" />
       <shortenClasspath name="NONE" />
@@ -128,77 +122,6 @@
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="SUITE" />
       <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners>
-        <listener class="basicTemplate.configs.listener" />
-      </listeners>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="testRunner" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="PlaywrightWithJava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="runner.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="runner" />
-      <option name="MAIN_CLASS_NAME" value="runner.testRunner" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="testRunner.runScenario (1)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="PlaywrightWithJava" />
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="runner.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/testng.xml" />
-      <option name="PACKAGE_NAME" value="runner" />
-      <option name="MAIN_CLASS_NAME" value="runner.testRunner" />
-      <option name="METHOD_NAME" value="runScenario" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="PARAMETERS" value="5" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners>
-        <listener class="basicTemplate.configs.listener" />
-      </listeners>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="testRunner.runScenario (2)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="PlaywrightWithJava" />
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="runner.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/testng.xml" />
-      <option name="PACKAGE_NAME" value="runner" />
-      <option name="MAIN_CLASS_NAME" value="runner.testRunner" />
-      <option name="METHOD_NAME" value="runScenario" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="PARAMETERS" value="11" />
       <option name="OUTPUT_DIRECTORY" value="" />
       <option name="PROPERTIES_FILE" value="" />
       <properties />
@@ -272,19 +195,13 @@
     </configuration>
     <list>
       <item itemvalue="TestNG.testRunner.runScenario" />
-      <item itemvalue="TestNG.testRunner.runScenario (1)" />
-      <item itemvalue="TestNG.testRunner.runScenario (2)" />
-      <item itemvalue="TestNG.testRunner" />
       <item itemvalue="TestNG.C:/QA_Resources/Automation Projects/AutomationScripts/Playwright_Java/src/test/testng.xml" />
       <item itemvalue="TestNG.treeConfigurations.configTree" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.testRunner.runScenario (2)" />
-        <item itemvalue="TestNG.C:/QA_Resources/Automation Projects/AutomationScripts/Playwright_Java/src/test/testng.xml" />
-        <item itemvalue="TestNG.testRunner.runScenario (1)" />
         <item itemvalue="TestNG.treeConfigurations.configTree" />
-        <item itemvalue="TestNG.testRunner" />
+        <item itemvalue="TestNG.C:/QA_Resources/Automation Projects/AutomationScripts/Playwright_Java/src/test/testng.xml" />
       </list>
     </recent_temporary>
   </component>
