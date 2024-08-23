@@ -13,7 +13,7 @@ import java.io.IOException;
 
 public class listener extends utils implements ITestListener {
     private static final ThreadLocal<ExtentTest> extentTest = new ThreadLocal<ExtentTest>();
-    ExtentReports extent = extentReporterNG.extentReportGenerator();
+    ExtentReports extent = extentReporterTestNG.extentReportGenerator();
     ExtentTest test;
 
     public listener() throws IOException {
@@ -35,13 +35,14 @@ public class listener extends utils implements ITestListener {
 
         try {
             extentTest.get().addScreenCaptureFromPath(getScreenShotPath(result.getMethod().getMethodName()));
+            extentTest.get().log(Status.FAIL, "Test Failed");
+            extentTest.get().fail(result.getThrowable());
         } catch (IOException e) {
             throw new RuntimeException(e);
         } catch (AWTException e) {
             throw new RuntimeException(e);
         }
-        extentTest.get().log(Status.FAIL, "Test Failed");
-        extentTest.get().fail(result.getThrowable());
+
 
     }
 
@@ -49,6 +50,7 @@ public class listener extends utils implements ITestListener {
     public void onTestSkipped(ITestResult result) {
         try {
             extentTest.get().addScreenCaptureFromPath(getScreenShotPath(result.getMethod().getMethodName()));
+            extentTest.get().skip(result.getTestName());
             extentTest.get().log(Status.SKIP, "Test Skipped");
         } catch (IOException | AWTException e) {
             e.printStackTrace();
@@ -59,7 +61,8 @@ public class listener extends utils implements ITestListener {
 
     public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
         try {
-            extentTest.get().addScreenCaptureFromPath(getScreenShotPath(result.getMethod().getMethodName()), result.getMethod().getMethodName());
+            extentTest.get().addScreenCaptureFromPath(getScreenShotPath(result.getMethod().getMethodName()));
+            extentTest.get().fail(result.getThrowable());
             extentTest.get().log(Status.WARNING, "testFailedButWithinSuccessPercentage");
         } catch (IOException | AWTException e) {
             e.printStackTrace();
@@ -69,7 +72,7 @@ public class listener extends utils implements ITestListener {
 
     public void onTestFailedWithTimeout(ITestResult result) {
         try {
-            extentTest.get().addScreenCaptureFromPath(getScreenShotPath(result.getMethod().getMethodName()), result.getMethod().getMethodName());
+            extentTest.get().addScreenCaptureFromPath(getScreenShotPath(result.getMethod().getMethodName()));
             extentTest.get().fail(result.getThrowable());
             extentTest.get().log(Status.WARNING, "TimeOut");
         } catch (IOException | AWTException e) {

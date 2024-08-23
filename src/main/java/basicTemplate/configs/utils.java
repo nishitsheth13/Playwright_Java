@@ -47,15 +47,15 @@ public class utils extends baseClass {
 
     public static void UploadFile(String by, String args) {
         Locator fileInput = page.locator(by);
-        fileInput.setInputFiles(Paths.get("C://QA_Resources//Automation Projects//AutomationScripts//Playwright_Java//executionReport//Extent-Report//PdfReport//extentPdf.pdf"));
+        fileInput.setInputFiles(Paths.get("C://QA_Resources//Automation Projects//AutomationScripts//Playwright_Java//extentReports//extentCucumberReports//pdfReport//extentPdf.pdf"));
     }
 
     public String getScreenShotPath(String TestName) throws IOException, AWTException {
         page.screenshot(new Page.ScreenshotOptions()
-                .setPath(Paths.get("C://QA_Resources//Automation Projects/AutomationScripts/Playwright_Java/executionReport/Reports" + "/Screenshots/" + TestName + utils.timeStamp() + ".png"))
+                .setPath(Paths.get("C://QA_Resources//Automation Projects/AutomationScripts/Playwright_Java/extentReports/extentTestNGReports" + "/screenShots/" + TestName + utils.timeStamp() + ".png"))
                 .setFullPage(true));
 
-        String destPath =  "../Screenshots/" + TestName + utils.timeStamp() + ".png";
+        String destPath = "../screenShots/" + TestName + utils.timeStamp() + ".png";
 
         return destPath;
     }

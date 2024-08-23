@@ -15,6 +15,7 @@ public class browserSelector extends baseClass {
     public static String URL = loadProps.getProperty("URL");
     public static boolean Recording = Boolean.parseBoolean(loadProps.getProperty("RecordingMode"));
     public static boolean Screenshot = Boolean.parseBoolean(loadProps.getProperty("ScreenshotsMode"));
+    public static boolean headless = Boolean.parseBoolean(loadProps.getProperty("HeadlessMode"));
     public static Playwright playwright;
     public static Browser browser;
     public static BrowserContext context;
@@ -24,9 +25,9 @@ public class browserSelector extends baseClass {
             Playwright playwright = Playwright.create();
             Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions()
                     .setArgs(Collections.singletonList("--start-maximized"))
-                    .setHeadless(false));
+                    .setHeadless(headless));
 
-            Path videoDir = Paths.get(System.getProperty("user.dir") +"/Recordings/");
+            Path videoDir = Paths.get(System.getProperty("user.dir") + "/recordings/");
             if (!Files.exists(videoDir)) {
                 Files.createDirectories(videoDir);
             }
@@ -37,8 +38,8 @@ public class browserSelector extends baseClass {
             context.setDefaultTimeout(20000);
             context.setDefaultNavigationTimeout(20000);
             page = context.newPage();
-            if (Recording) {
-                myRecording.startRecording();
+            if (Recording && !headless) {
+                recoder.startRecording();
             }
             page.navigate(URL);
 
@@ -47,8 +48,8 @@ public class browserSelector extends baseClass {
             Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions()
                     .setChannel("msedge")
                     .setArgs(Collections.singletonList("--start-maximized"))
-                    .setHeadless(false));
-            Path videoDir = Paths.get(System.getProperty("user.dir") +"/Recordings/");
+                    .setHeadless(headless));
+            Path videoDir = Paths.get(System.getProperty("user.dir") + "/recordings/");
             if (!Files.exists(videoDir)) {
                 Files.createDirectories(videoDir);
             }
@@ -59,8 +60,8 @@ public class browserSelector extends baseClass {
             context.setDefaultTimeout(20000);
             context.setDefaultNavigationTimeout(20000);
             page = context.newPage();
-            if (Recording) {
-                myRecording.startRecording();
+            if (Recording && !headless) {
+                recoder.startRecording();
             }
 
             page.navigate(URL);
@@ -68,8 +69,8 @@ public class browserSelector extends baseClass {
             Playwright playwright = Playwright.create();
             Browser browser = playwright.firefox().launch(new BrowserType.LaunchOptions()
                     .setArgs(Collections.singletonList("--start-maximized"))
-                    .setHeadless(false));
-            Path videoDir = Paths.get(System.getProperty("user.dir") +"/Recordings/");
+                    .setHeadless(headless));
+            Path videoDir = Paths.get(System.getProperty("user.dir") + "/recordings/");
             if (!Files.exists(videoDir)) {
                 Files.createDirectories(videoDir);
             }
@@ -80,8 +81,8 @@ public class browserSelector extends baseClass {
             context.setDefaultTimeout(20000);
             context.setDefaultNavigationTimeout(20000);
             page = context.newPage();
-            if (Recording) {
-                myRecording.startRecording();
+            if (Recording && !headless) {
+                recoder.startRecording();
             }
 
             page.navigate(URL);
@@ -96,7 +97,10 @@ public class browserSelector extends baseClass {
 
         if (page != null) {
             page.close();
-            myRecording.stopRecording();
+            if (Recording && !headless) {
+                recoder.stopRecording();
+            }
+
         }
         if (context != null) {
             context.close();
@@ -111,14 +115,15 @@ public class browserSelector extends baseClass {
 
 
     //For Parallel Execution using Testng XML
-    public static void LaunchBrowser(String brows) throws Exception {
-        if (brows.equalsIgnoreCase("chrome")) {
+
+    public static void LaunchBrowser(String browserSelection) throws Exception {
+        if (browserSelection.equalsIgnoreCase("chrome")) {
             Playwright playwright = Playwright.create();
             Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions()
                     .setArgs(Collections.singletonList("--start-maximized"))
-                    .setHeadless(false));
+                    .setHeadless(headless));
 
-            Path videoDir = Paths.get(System.getProperty("user.dir") +"/Recordings/");
+            Path videoDir = Paths.get(System.getProperty("user.dir") + "/recordings/");
             if (!Files.exists(videoDir)) {
                 Files.createDirectories(videoDir);
             }
@@ -130,20 +135,20 @@ public class browserSelector extends baseClass {
             context.setDefaultTimeout(20000);
             context.setDefaultNavigationTimeout(20000);
                 page = context.newPage();
-            if (Recording) {
-                myRecording.startRecording();
+            if (Recording && !headless) {
+                recoder.startRecording();
             }
 
             page.navigate(URL);
 
 
-        } else if (brows.equalsIgnoreCase("edge")) {
+        } else if (browserSelection.equalsIgnoreCase("edge")) {
             Playwright playwright = Playwright.create();
             Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions()
                     .setChannel("msedge")
                     .setArgs(Collections.singletonList("--start-maximized"))
-                    .setHeadless(false));
-            Path videoDir = Paths.get(System.getProperty("user.dir") +"/Recordings/");
+                    .setHeadless(headless));
+            Path videoDir = Paths.get(System.getProperty("user.dir") + "/recordings/");
             if (!Files.exists(videoDir)) {
                 Files.createDirectories(videoDir);
             }
@@ -154,18 +159,18 @@ public class browserSelector extends baseClass {
             context.setDefaultTimeout(20000);
             context.setDefaultNavigationTimeout(20000);
             page = context.newPage();
-            if (Recording) {
-                myRecording.startRecording();
+            if (Recording && !headless) {
+                recoder.startRecording();
             }
 
             page.navigate(URL);
 
-        } else if (brows.equalsIgnoreCase("firefox")) {
+        } else if (browserSelection.equalsIgnoreCase("firefox")) {
             Playwright playwright = Playwright.create();
             Browser browser = playwright.firefox().launch(new BrowserType.LaunchOptions()
                     .setArgs(Collections.singletonList("--start-maximized"))
-                    .setHeadless(false));
-            Path videoDir = Paths.get(System.getProperty("user.dir") +"/Recordings/");
+                    .setHeadless(headless));
+            Path videoDir = Paths.get(System.getProperty("user.dir") + "/recordings/");
             if (!Files.exists(videoDir)) {
                 Files.createDirectories(videoDir);
             }
@@ -176,8 +181,8 @@ public class browserSelector extends baseClass {
             context.setDefaultTimeout(20000);
             context.setDefaultNavigationTimeout(20000);
             page = context.newPage();
-            if (Recording) {
-                myRecording.startRecording();
+            if (Recording && !headless) {
+                recoder.startRecording();
             }
 
             page.navigate(URL);
@@ -190,7 +195,9 @@ public class browserSelector extends baseClass {
     public static void closeBrowser() throws Exception {
         if (page != null) {
             page.close();
-            myRecording.stopRecording();
+            if (Recording && !headless) {
+                recoder.stopRecording();
+            }
         }
         if (context != null) {
             context.close();

@@ -1,34 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="All Test Suite" parallel="classes">
+<suite name="MRI Energy Testng XML Test Suite" parallel="classes">
     <listeners>
         <listener class-name="basicTemplate.configs.listener">
         </listener>
     </listeners>
 
 
-       <!-- //Runner Tests using cross browser//-->
-   <test name="Parallel runner Tests using chrome with Runner" parallel="classes">
-         <parameter name="Browser" value="chrome"/>
-         <classes>
-             <class name="runner.testRunner"/>
-         </classes>
-     </test>
 
-    <test name="Parallel Tests using edge with Runner" parallel="classes">
-                <parameter name="Browser" value="edge"/>
-            <classes>
-                    <class name="runner.testRunner"/>
-            </classes>
+<!--    <test name="Tree Configuration runner Tests using chrome" >-->
+<!--        <parameter name="Browser" value="chrome"/>-->
+<!--        <classes>-->
+<!--            <class name="basicTemplate.pages.treeConfigurations"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+
+    <!--   Tests Runner-->
+    <test name="Parallel tests with Runner" parallel="classes">
+        <parameter name="Browser" value="edge"/>
+        <classes>
+            <class name="runner.testRunner"/>
+        </classes>
     </test>
 
-
-<!--   Method Runner-->
-    <test name="Parallel runner Tests using chrome" parallel="classes">
+    <!--   Method Runner-->
+    <test name="Tree Configuration runner Tests " >
         <parameter name="Browser" value="chrome"/>
         <classes>
-            <class name="basicTemplate.pages.treeConfigurations"/>
+            <class name="basicTemplate.pages.login"/>
         </classes>
     </test>
 
