@@ -10,7 +10,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Collections;
 
-public class browserSelector extends baseClass {
+public class browserSelector extends base {
     public static String brows = loadProps.getProperty("Browser");
     public static String URL = loadProps.getProperty("URL");
     public static boolean Recording = Boolean.parseBoolean(loadProps.getProperty("RecordingMode"));
@@ -42,6 +42,8 @@ public class browserSelector extends baseClass {
                 recoder.startRecording();
             }
             page.navigate(URL);
+
+
 
         } else if (brows.equalsIgnoreCase("edge")) {
             Playwright playwright = Playwright.create();

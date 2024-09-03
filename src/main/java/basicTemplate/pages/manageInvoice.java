@@ -32,7 +32,7 @@ public class manageInvoice extends utils {
     public static String InvoiceDate = loadProps.getProperty("InvoiceDate");
     public static String ReceivedDate = loadProps.getProperty("ReceivedDate");
     public static String Setup = "xpath=//*[@id=\"MainMenu\"]/li[2]/a/div/span";
-    public static String invoiceValidationMenu = "xpath=/html/body/form/div[5]/div[1]/div[3]/div[1]/ul/li[6]/a/div/span";
+    public static String invoiceValidationMenu = "xpath=//*[@id=\"MainMenu\"]/li[6]/a/div/span";
     public static String manageInvoiceLink = "text=Manage Invoices";
     public static String headerSection = "xpath=//*[@id=\"MainPane\"]/div/h3";
     public static String portfolio = "xpath=/html/body/div[1]/div[2]/div/div/div/div/div[1]/div/form/div/div[1]/div[1]/div[1]/span/button";
@@ -53,8 +53,10 @@ public class manageInvoice extends utils {
     public static String selectEndDate = "xpath=//span[normalize-space()='" + EndDate + "']";
     public static String clickOnInvoiceDateCalender = "xpath=/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/div[1]/div[5]/div[1]/div[2]/div[1]/span[1]/button[1]";
     public static String selectInvoiceDate = "xpath=//td[1]//span[normalize-space()='" + InvoiceDate + "']";
+    public static String SelectInvoiceDateByPath ="xpath=/html/body/div[5]/div/div/div/div[2]/table/tbody/tr[4]/td[2]";
     public static String clickOnReceivedDateCalender = "xpath=/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/div[1]/div[5]/div[1]/div[2]/div[2]/span[1]/button[1]";
     public static String selectReceivedDate = "xpath=//td[1]//span[normalize-space()='" + ReceivedDate + "']";
+    public static String selectReceivedDateByPath ="xpath=/html/body/div[6]/div/div/div/div[2]/table/tbody/tr[4]/td[2]";
     public static String clickOnDueDateCalender = "xpath=/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/div[1]/div[5]/div[1]/div[3]/div[1]/span[1]/button[1]";
     public static String selectDueDate = "xpath=//td[1]//span[normalize-space()='" + DueDate + "']"; //td[@title='Thursday, 1 August 2024']//span[@class='k-link'][normalize-space()='1']
     public static String clickOnCurrencyDropdown = "xpath=/html/body/div[1]/div[2]/div/div/div/div/div[1]/div/form/div/div[1]/div[6]/div[1]/span/input";
@@ -140,12 +142,9 @@ public class manageInvoice extends utils {
     }
 
 
-    @Test
+
     public void redirectToInvoiceList() throws InterruptedException {
-        if (page.isVisible(username)) {
-            login.login();
-            System.out.println("User Logged in.");
-        }
+       login.login();
         sleep(2000);
         clickOnElement(invoiceValidationMenu);
         sleep(1000);
@@ -153,7 +152,7 @@ public class manageInvoice extends utils {
         sleep(2000);
     }
 
-
+    @Test
     public void createInvoice() throws InterruptedException {
         if (page.isHidden(headerSection)) {
             redirectToInvoiceList();
@@ -171,7 +170,6 @@ public class manageInvoice extends utils {
         clickOnElement(addButton);
         sleep(1000);
         clickOnElement(portfolio);
-        isElementPresent(selectPortfolio);
         sleep(1000);
         clickOnElement(selectPortfolio);
         enterText(searchAccount, AccountNumber);
@@ -202,11 +200,21 @@ public class manageInvoice extends utils {
         sleep(1000);
         clickOnElement(clickOnInvoiceDateCalender);
         sleep(1000);
-        clickOnElement(selectInvoiceDate);
+        if(isElementPresent(selectInvoiceDate)) {
+            clickOnElement(selectInvoiceDate);
+        }
+        else {
+            clickOnElement(SelectInvoiceDateByPath);
+        }
         sleep(1000);
         clickOnElement(clickOnReceivedDateCalender);
         sleep(1000);
-        clickOnElement(selectReceivedDate);
+        if(isElementPresent(selectReceivedDate)) {
+            clickOnElement(selectReceivedDate);
+        }
+        else {
+            clickOnElement(selectReceivedDateByPath);
+        }
         sleep(1000);
         /*clickOnElement(clickOnDueDateCalender);
         clickOnElement(selectDueDate);*/

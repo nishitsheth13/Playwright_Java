@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="MRI Energy Testng XML Test Suite" parallel="classes">
+<suite name="MRI Energy Testng XML Test Suite" parallel="false">
     <listeners>
         <listener class-name="basicTemplate.configs.listener">
         </listener>
@@ -18,7 +18,7 @@
 
 
     <!--   Tests Runner-->
-    <test name="Parallel tests with Runner" parallel="classes">
+    <test name="Parallel tests with Runner" >
         <parameter name="Browser" value="edge"/>
         <classes>
             <class name="runner.testRunner"/>
@@ -29,7 +29,7 @@
     <test name="Tree Configuration runner Tests " >
         <parameter name="Browser" value="chrome"/>
         <classes>
-            <class name="basicTemplate.pages.login"/>
+            <class name="basicTemplate.pages.manageInvoice"/>
         </classes>
     </test>
 

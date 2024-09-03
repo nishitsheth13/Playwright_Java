@@ -6,7 +6,7 @@ import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.options.AriaRole;
 import org.testng.annotations.*;
-import basicTemplate.configs.listener;
+import basicTemplate.pages.login;
 
 import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
 
@@ -57,7 +57,7 @@ public class treeConfigurations extends utils {
         Locator companyCountryField = page.getByLabel("Country");
         Locator indiaOption = page.getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName("India"));
         Locator calanderOption = page.locator("xpath=/html/body/div[1]/div[2]/div/form/div/div[1]/div/div[2]/div/div[2]/div[1]/div[4]/div/span/button");
-        Locator augustButton = page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("August"));
+        Locator augustButton = page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("September"));
         Locator goToPreviousPeriodButton = page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Go to the previous period"));
         Locator janButton = page.getByText("Jan");
         Locator firstJanButton = page.getByLabel("Sunday, 1 January").getByText("1");
@@ -95,7 +95,7 @@ public class treeConfigurations extends utils {
         Locator dataImportCodeField = page.locator("#txtMDataImportCode");
         Locator contractLink = page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Contract"));
         Locator billingCheckbox = page.getByLabel("Billing");
-
+        login.login();
         page.navigate("https://uksestdevtest02.ukest.lan/eSight/cmstartpage.aspx");
         setupmenu.click();
         configureTreeLink.click();

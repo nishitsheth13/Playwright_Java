@@ -6,6 +6,11 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Protocol;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
 public class extentReporterTestNG {
 
     public static ExtentReports report = null;
@@ -13,9 +18,26 @@ public class extentReporterTestNG {
     public static ExtentTest test;
     static ExtentReports extent;
 
-    public static ExtentReports extentReportGenerator() {
+    public static ExtentReports extentReportGenerator() throws IOException {
 
-        String path = System.getProperty("user.dir") + "/extentReports/extentTestNGReports/htmlReport/extentReport.html";
+        //ReleaseVersionFolderAUtoFetch
+//        String folderName = utils.getText("/html/body/div/div[2]/div[1]/div[1]");
+//        Path reportPath = Paths.get(System.getProperty("user.dir")+"/extentReports/extentTestNGReports/", folderName);
+//
+//        // Step 3: Create the folder if it does not exist
+//        if (!Files.exists(reportPath)) {
+//            Files.createDirectories(reportPath);
+//        }
+
+        String folderName = loadProps.getProperty("Version");
+        Path reportPath = Paths.get(System.getProperty("user.dir")+"/extentReports/extentTestNGReports/", folderName);
+
+        // Step 3: Create the folder if it does not exist
+        if (!Files.exists(reportPath)) {
+            Files.createDirectories(reportPath);
+        }
+
+        String path = reportPath+"/htmlReport/extentReport_"+ utils.timeStamp() +".html";
         ExtentSparkReporter reporter = new ExtentSparkReporter(path);
         reporter.config().setReportName("MRI Energy Automation Test Report");
         reporter.config().setDocumentTitle("MRI Energy Test Results");
@@ -28,7 +50,7 @@ public class extentReporterTestNG {
         extent.setSystemInfo("Tester Name ", "Nishit Sheth");
         extent.setSystemInfo("Build No ", "1.0");
         extent.setSystemInfo("os", "Windows");
-        htmlReporter = new ExtentSparkReporter(System.getProperty("user.dir") + "/extentReports/extentTestNGReports/sparkReport/index.html");
+        htmlReporter = new ExtentSparkReporter(reportPath+"/sparkReport/spark_"+ utils.timeStamp() +".html");
         extent.attachReporter(htmlReporter);
         htmlReporter.config().setCss("css-string");
         htmlReporter.config().setDocumentTitle("Automation Test Report");

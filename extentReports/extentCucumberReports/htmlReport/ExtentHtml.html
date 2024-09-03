@@ -40,7 +40,6 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 			<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
-			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
 		</ul>
 		<!-- report name -->
@@ -50,7 +49,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Aug 23, 2024 06:27:46 PM</span>
+			<span class='label blue darken-3 suite-start-time'>Sep 2, 2024 06:57:24 PM</span>
 			</a>
 		</ul>
 	</div>
@@ -66,7 +65,6 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
-					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -78,11 +76,11 @@
 				<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@Priority=3</a></li>
-					<li><a href='#'>@Priority=4</a></li>
 					<li><a href='#'>@Priority=0</a></li>
-					<li><a href='#'>@Priority=1</a></li>
 					<li><a href='#'>@Priority=2</a></li>
+					<li><a href='#'>@Priority=4</a></li>
+					<li><a href='#'>@Priority=1</a></li>
+					<li><a href='#'>@Priority=3</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -124,12 +122,12 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='$66%'>
-                    <span class='strong'>2</span> features passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='$100%'>
+                    <span class='strong'>3</span> features passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='33%'>
-                    1</span> features failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> features failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped
                 </div>
@@ -142,12 +140,12 @@
                     <canvas id='child-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='83%'>
-                    <span class='strong'>5</span> scenarios passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'>
+                    <span class='strong'>6</span> scenarios passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='16%'>
-                    1</span> scenarios failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> scenarios failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -162,14 +160,14 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='90%'>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'>
                     <span class='strong'>18</span> steps passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='5%'>
-                    1</span> steps failed, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='5%'>
-                    1</span> skipped, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> steps failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> others
                 </div>
@@ -193,7 +191,7 @@
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='2'>
 					<div class='test-heading'>
 						<span class='test-name'>Validate User Redirection and Functionality in MRI Energy Web Application Login feature</span>
-						<span class='test-time'>Aug 23, 2024 06:27:47 PM</span>
+						<span class='test-time'>Sep 2, 2024 06:57:34 PM</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -206,7 +204,7 @@
 
 <div class='scenario node' test-id='3' status='pass'>
 
-	<span class='duration right label'>00 00 09.070</span>
+	<span class='duration right label'>00 00 00.680</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Verify User is redirected to correct URL</div>
 	</div>
@@ -217,26 +215,26 @@
 		</div>
 	
 	<ul class='steps'>
-		<li test-id='5' class='node given Pass' status='Pass'>
-			<div class="step-name" title="(stepDef.login.verifyURL())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Enter URL</div>
+		<li test-id='4' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(stepDefs.login.verifyURL())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Enter URL</div>
 
 
 		</li>
-		<li test-id='6' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(stepDef.login.verifyBrowser())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Browser is Open</div>
+		<li test-id='5' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(stepDefs.login.verifyBrowser())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Browser is Open</div>
 
 
 		</li>
-		<li test-id='7' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(stepDef.login.verifyRedirection())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User is redirected to the application's URL</div>
+		<li test-id='6' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(stepDefs.login.verifyRedirection())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User is redirected to the application's URL</div>
 
 
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='10' status='pass'>
+<div class='scenario node' test-id='8' status='pass'>
 
-	<span class='duration right label'>00 00 05.518</span>
+	<span class='duration right label'>00 00 11.970</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Verify User is able to access the MRI Energy application</div>
 	</div>
@@ -247,18 +245,18 @@
 		</div>
 	
 	<ul class='steps'>
-		<li test-id='12' class='node given Pass' status='Pass'>
-			<div class="step-name" title="(stepDef.login.verifyRedirection())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User is redirected to the application's URL</div>
+		<li test-id='9' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(stepDefs.login.verifyRedirection())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User is redirected to the application's URL</div>
 
 
 		</li>
-		<li test-id='13' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(stepDef.login.userEnterTheValidCredentialsOfAdmin())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User enter the valid credentials of admin</div>
+		<li test-id='10' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(stepDefs.login.userEnterTheValidCredentialsOfAdmin())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User enter the valid credentials of admin</div>
 
 
 		</li>
-		<li test-id='14' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(stepDef.login.verifyUserShouldBeAbleToRedirectToHomePage())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Verify User should be able to redirect to HomePage</div>
+		<li test-id='11' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(stepDefs.login.verifyUserShouldBeAbleToRedirectToHomePage())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Verify User should be able to redirect to HomePage</div>
 
 
 		</li>
@@ -266,10 +264,10 @@
 </div>
 					</div>
 				</li>
-				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='17'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='13'>
 					<div class='test-heading'>
 						<span class='test-name'>Validate User Redirection and Functionality in MRI Energy Web Application for Invoice Validation feature</span>
-						<span class='test-time'>Aug 23, 2024 06:28:01 PM</span>
+						<span class='test-time'>Sep 2, 2024 06:57:47 PM</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -280,9 +278,9 @@
 	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
 </div>
 
-<div class='scenario node' test-id='18' status='pass'>
+<div class='scenario node' test-id='14' status='pass'>
 
-	<span class='duration right label'>00 00 09.630</span>
+	<span class='duration right label'>00 00 09.614</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Verify that user is able to access Invoice Validation</div>
 	</div>
@@ -293,26 +291,26 @@
 		</div>
 	
 	<ul class='steps'>
-		<li test-id='20' class='node given Pass' status='Pass'>
-			<div class="step-name" title="(stepDef.login.verifyRedirection())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User is redirected to the application's URL</div>
+		<li test-id='15' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(stepDefs.login.verifyRedirection())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User is redirected to the application's URL</div>
 
 
 		</li>
-		<li test-id='21' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(stepDef.manageInvoice.user_Try_To_Access_The_Invoice_Listing())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User navigates to the Invoice listing page</div>
+		<li test-id='16' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(stepDefs.manageInvoice.user_Try_To_Access_The_Invoice_Listing())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User navigates to the Invoice listing page</div>
 
 
 		</li>
-		<li test-id='22' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(stepDef.manageInvoice.verify_That_User_Should_Be_Able_To_Access_The_Invoice_Validation())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Verify that user should be able to access the Invoice Validation</div>
+		<li test-id='17' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(stepDefs.manageInvoice.verify_That_User_Should_Be_Able_To_Access_The_Invoice_Validation())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Verify that user should be able to access the Invoice Validation</div>
 
 
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='25' status='pass'>
+<div class='scenario node' test-id='19' status='pass'>
 
-	<span class='duration right label'>00 02 04.440</span>
+	<span class='duration right label'>00 04 03.841</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Creating a new invoice</div>
 	</div>
@@ -323,31 +321,26 @@
 		</div>
 	
 	<ul class='steps'>
-		<li test-id='27' class='node given Pass' status='Pass'>
-			<div class="step-name" title="(stepDef.login.verifyRedirection())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User is redirected to the application's URL</div>
+		<li test-id='20' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(stepDefs.login.verifyRedirection())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User is redirected to the application's URL</div>
 
 
 		</li>
-		<li test-id='28' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(stepDef.manageInvoice.user_Try_To_Access_The_Invoice_Listing())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User navigates to the Invoice listing page</div>
+		<li test-id='21' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(stepDefs.manageInvoice.the_user_initiates_the_creation_of_a_new_invoice())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the User initiates the creation of a new invoice</div>
 
 
 		</li>
-		<li test-id='29' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(stepDef.manageInvoice.the_user_initiates_the_creation_of_a_new_invoice())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the User initiates the creation of a new invoice</div>
-
-
-		</li>
-		<li test-id='30' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(stepDef.manageInvoice.the_user_should_be_able_to_successfully_create_a_new_invoice())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the User should be able to successfully create a new invoice</div>
+		<li test-id='22' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(stepDefs.manageInvoice.the_user_should_be_able_to_successfully_create_a_new_invoice())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the User should be able to successfully create a new invoice</div>
 
 
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='33' status='pass'>
+<div class='scenario node' test-id='24' status='pass'>
 
-	<span class='duration right label'>00 00 23.849</span>
+	<span class='duration right label'>00 00 43.995</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Deleting invoice</div>
 	</div>
@@ -358,18 +351,18 @@
 		</div>
 	
 	<ul class='steps'>
-		<li test-id='35' class='node given Pass' status='Pass'>
-			<div class="step-name" title="(stepDef.manageInvoice.user_Try_To_Access_The_Invoice_Listing())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User navigates to the Invoice listing page</div>
+		<li test-id='25' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(stepDefs.manageInvoice.user_Try_To_Access_The_Invoice_Listing())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User navigates to the Invoice listing page</div>
 
 
 		</li>
-		<li test-id='36' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(stepDef.manageInvoice.theUSerInitiatesTheDeletionOfInvoice())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the USer initiates the deletion of invoice</div>
+		<li test-id='26' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(stepDefs.manageInvoice.theUSerInitiatesTheDeletionOfInvoice())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the USer initiates the deletion of invoice</div>
 
 
 		</li>
-		<li test-id='37' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(stepDef.manageInvoice.theUserShouldBeAbleToSuccessfullyDeleteAInvoice())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the User should be able to successfully delete a invoice</div>
+		<li test-id='27' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(stepDefs.manageInvoice.theUserShouldBeAbleToSuccessfullyDeleteAInvoice())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the User should be able to successfully delete a invoice</div>
 
 
 		</li>
@@ -377,11 +370,11 @@
 </div>
 					</div>
 				</li>
-				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='40'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='29'>
 					<div class='test-heading'>
 						<span class='test-name'>Verify that User can create Edit and Delete the Tree Structure Including Company, Group, Site and Meter</span>
-						<span class='test-time'>Aug 23, 2024 06:30:39 PM</span>
-						<span class='test-status right fail'>Fail</span>
+						<span class='test-time'>Sep 2, 2024 07:02:44 PM</span>
+						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class="sr-filters bdd-filters">
@@ -391,49 +384,30 @@
 	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
 </div>
 
-<div class='scenario node' test-id='41' status='fail'>
+<div class='scenario node' test-id='30' status='pass'>
 
-	<span class='duration right label'>00 02 03.496</span>
+	<span class='duration right label'>00 03 49.524</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario: Verify User can modify the treeConfiguration</div>
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Verify User can modify the treeConfiguration</div>
 	</div>
 	
 	
 	
 	<ul class='steps'>
-		<li test-id='43' class='node given Pass' status='Pass'>
-			<div class="step-name" title="(stepDef.login.verifyRedirection())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User is redirected to the application's URL</div>
+		<li test-id='31' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(stepDefs.login.verifyRedirection())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User is redirected to the application's URL</div>
 
 
 		</li>
-		<li test-id='44' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(stepDef.login.userEnterTheValidCredentialsOfAdmin())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User enter the valid credentials of admin</div>
+		<li test-id='32' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(stepDefs.treeConfiguration.user_try_to_modify_the_tree_configuration())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User try to modify the Tree Configuration</div>
 
 
 		</li>
-		<li test-id='45' class='node when Fail' status='Fail'>
-			<div class="step-name" title="(stepDef.treeConfiguration.user_try_to_modify_the_tree_configuration())"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>When User try to modify the Tree Configuration</div>
+		<li test-id='33' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(stepDefs.treeConfiguration.verify_that_user_should_be_success_in_the_modification_of_tree_configuration())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Verify that User should be success in the Modification of Tree Configuration</div>
 
 
-					<textarea disabled class="code-block">org.opentest4j.AssertionFailedError: Locator expected to be visible
-Call log:
-Locator.expect with timeout 5000ms
-waiting for getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Add Group"))
-	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:69)
-	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:51)
-	at com.microsoft.playwright.impl.LocatorAssertionsImpl.expectTrue(LocatorAssertionsImpl.java:392)
-	at com.microsoft.playwright.impl.LocatorAssertionsImpl.isVisible(LocatorAssertionsImpl.java:387)
-	at com.microsoft.playwright.assertions.LocatorAssertions.isVisible(LocatorAssertions.java:768)
-	at basicTemplate.pages.treeConfigurations.configTree(treeConfigurations.java:128)
-	at stepDef.treeConfiguration.user_try_to_modify_the_tree_configuration(treeConfiguration.java:16)
-	at ✽.User try to modify the Tree Configuration(file:///C:/QA_Resources/Automation%20Projects/AutomationScripts/Playwright_Java/src/test/java/feature/treeConfiguration.feature:6)
-</textarea>
-		</li>
-		<li test-id='46' class='node then Skip' status='Skip'>
-			<div class="step-name" title="(stepDef.treeConfiguration.verify_that_user_should_be_success_in_the_modification_of_tree_configuration())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then Verify that User should be success in the Modification of Tree Configuration</div>
-
-
-					<div class="node-step">Step skipped</div>
 		</li>
 	</ul>
 </div>
@@ -481,72 +455,6 @@ waiting for getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Add 
 			<ul id='category-collection' class='category-collection'>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@Priority=3</span>
-						<span class='category-status right'>
-						<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Aug 23, 2024 06:28:11 PM</td>
-										<td class='linked' test-id='25'>Creating a new invoice</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@Priority=4</span>
-						<span class='category-status right'>
-						<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Aug 23, 2024 06:30:15 PM</td>
-										<td class='linked' test-id='33'>Deleting invoice</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
 						<span class='category-name'>@Priority=0</span>
 						<span class='category-status right'>
 						<span class='label pass'>1</span>
@@ -569,41 +477,8 @@ waiting for getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Add 
 								</thead>
 								<tbody>
 									<tr>
-										<td>Aug 23, 2024 06:27:47 PM</td>
+										<td>Sep 2, 2024 06:57:34 PM</td>
 										<td class='linked' test-id='3'>Verify User is redirected to correct URL</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@Priority=1</span>
-						<span class='category-status right'>
-						<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Aug 23, 2024 06:27:56 PM</td>
-										<td class='linked' test-id='10'>Verify User is able to access the MRI Energy application</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -635,8 +510,107 @@ waiting for getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Add 
 								</thead>
 								<tbody>
 									<tr>
-										<td>Aug 23, 2024 06:28:01 PM</td>
-										<td class='linked' test-id='18'>Verify that user is able to access Invoice Validation</td>
+										<td>Sep 2, 2024 06:57:47 PM</td>
+										<td class='linked' test-id='14'>Verify that user is able to access Invoice Validation</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@Priority=4</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Sep 2, 2024 07:02:00 PM</td>
+										<td class='linked' test-id='24'>Deleting invoice</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@Priority=1</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Sep 2, 2024 06:57:35 PM</td>
+										<td class='linked' test-id='8'>Verify User is able to access the MRI Energy application</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@Priority=3</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Sep 2, 2024 06:57:56 PM</td>
+										<td class='linked' test-id='19'>Creating a new invoice</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -653,74 +627,7 @@ waiting for getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Add 
 		</div>
 	</div>
 </div>
-<!-- category view --><div id='exception-view' class='view hide'>
-	<section id='controls'>
-		<div class='controls grey lighten-4'>
-			<!-- search -->
-			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
-				<a href="#" class='search-div'>
-				<i class='material-icons'>search</i> Search
-				</a>
-				<div class='input-field left hide'>
-					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
-				</div>
-			</div>
-			<!-- search -->
-		</div>
-	</section>
-	<div class='subview-left left'>
-		<div class='view-summary'>
-			<ul id='exception-collection' class='exception-collection'>
-				<li class='exception displayed active'>
-					<div class='exception-heading'>
-						<span class='exception-name'>org.opentest4j.AssertionFailedError</span>
-						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
-					</div>
-					<div class='exception-content hide'>
-						<div class='exception-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>StackTrace</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Aug 23, 2024 06:30:43 PM</td>
-										<td class='linked' test-id='45'>When User try to modify the Tree Configuration</td>
-										<td>
-											<textarea disabled class="code-block">org.opentest4j.AssertionFailedError: Locator expected to be visible
-Call log:
-Locator.expect with timeout 5000ms
-waiting for getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Add Group"))
-	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:69)
-	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:51)
-	at com.microsoft.playwright.impl.LocatorAssertionsImpl.expectTrue(LocatorAssertionsImpl.java:392)
-	at com.microsoft.playwright.impl.LocatorAssertionsImpl.isVisible(LocatorAssertionsImpl.java:387)
-	at com.microsoft.playwright.assertions.LocatorAssertions.isVisible(LocatorAssertions.java:768)
-	at basicTemplate.pages.treeConfigurations.configTree(treeConfigurations.java:128)
-	at stepDef.treeConfiguration.user_try_to_modify_the_tree_configuration(treeConfiguration.java:16)
-	at ✽.User try to modify the Tree Configuration(file:///C:/QA_Resources/Automation%20Projects/AutomationScripts/Playwright_Java/src/test/java/feature/treeConfiguration.feature:6)
-</textarea>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<div class='subview-right left'>
-		<div class='view-summary'>
-			<h5 class='exception-name'></h5>
-		</div>
-	</div>
-</div>
-<!-- exception view --><div id='dashboard-view' class='view hide'>
+<!-- category view --><div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
 		<h5>Dashboard</h5>
 
@@ -740,25 +647,25 @@ waiting for getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Add 
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>20</div>
+					<div class='panel-lead'>18</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Aug 23, 2024 06:27:46 PM</div>
+					<div class='panel-lead'>Sep 2, 2024 06:57:24 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Aug 23, 2024 06:32:43 PM</div>
+			 		<div class='panel-lead'>Sep 2, 2024 07:06:34 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>00 04 56.630</div>
+					<div class='panel-lead'>00 09 09.745</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -802,7 +709,16 @@ waiting for getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Add 
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>@Priority=3</td>
+							<td>@Priority=0</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@Priority=2</td>
 							<td>1</td>
 							<td>0</td>
 							<td>0</td>
@@ -820,15 +736,6 @@ waiting for getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Add 
 							</td>
 						</tr>
 						<tr>
-							<td>@Priority=0</td>
-							<td>1</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
 							<td>@Priority=1</td>
 							<td>1</td>
 							<td>0</td>
@@ -838,7 +745,7 @@ waiting for getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Add 
 							</td>
 						</tr>
 						<tr>
-							<td>@Priority=2</td>
+							<td>@Priority=3</td>
 							<td>1</td>
 							<td>0</td>
 							<td>0</td>
@@ -858,34 +765,34 @@ waiting for getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Add 
 		<script>
 			var statusGroup = {
                 parentCount: 3,
-				passParent: 2,
-				failParent: 1,
+				passParent: 3,
+				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
 				childCount: 6,
-				passChild: 5,
-				failChild: 1,
+				passChild: 6,
+				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				grandChildCount: 20,
+				grandChildCount: 18,
 				passGrandChild: 18,
-				failGrandChild: 1,
+				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 1,
+				skipGrandChild: 0,
 				infoGrandChild: 0,
 			};
 			</script>
 		
 		<script>
 			var timeline = {
-			        "Validate User Redirection and Functionality in MRI Energy Web Application Login feature":14.599,"Validate User Redirection and Functionality in MRI Energy Web Application for Invoice Validation feature":157.928,"Verify that User can create Edit and Delete the Tree Structure Including Company, Group, Site and Meter":123.496
+			        "Validate User Redirection and Functionality in MRI Energy Web Application Login feature":12.666,"Validate User Redirection and Functionality in MRI Energy Web Application for Invoice Validation feature":297.465,"Verify that User can create Edit and Delete the Tree Structure Including Company, Group, Site and Meter":229.524
 			};
 		</script>
 		

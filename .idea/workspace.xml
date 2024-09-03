@@ -5,37 +5,66 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e3722138-30a0-44e1-9737-102fcf9fd4dd" name="Changes" comment="initial Commit">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/basicTemplate/pages/login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Recordings/Recording_2024_08_20_11_41_00.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Recordings/Recording_2024_08_20_11_42_39.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/executionReport/extent-Report/htmlReport/ExtentHtml.html" beforeDir="false" afterPath="$PROJECT_DIR$/extentReports/extentCucumberReports/htmlReport/ExtentHtml.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/executionReport/extent-Report/pdfReport/ExtentPdf.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/extentReports/extentCucumberReports/pdfReport/ExtentPdf.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/executionReport/extent-Report/sparkReport/Spark.html" beforeDir="false" afterPath="$PROJECT_DIR$/extentReports/extentCucumberReports/sparkReport/Spark.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/executionReport/reports/Screenshots/configTree08_233_2024_114323.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/executionReport/reports/extentReport/extentReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/extentReports/extentTestNGReports/extentReport/extentReport.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/executionReport/reports/sparkReport/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/extentReports/extentTestNGReports/sparkReport/Index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extentReports/extentCucumberReports/htmlReport/ExtentHtml.html" beforeDir="false" afterPath="$PROJECT_DIR$/extentReports/extentCucumberReports/htmlReport/ExtentHtml.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extentReports/extentCucumberReports/pdfReport/ExtentPdf.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/extentReports/extentCucumberReports/pdfReport/ExtentPdf.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extentReports/extentCucumberReports/sparkReport/Spark.html" beforeDir="false" afterPath="$PROJECT_DIR$/extentReports/extentCucumberReports/sparkReport/Spark.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extentReports/extentTestNGReports/extentReport/extentReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extentReports/extentTestNGReports/htmlReport/extentReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extentReports/extentTestNGReports/screenShots/Failed_login08_236_2024_180023.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extentReports/extentTestNGReports/sparkReport/Index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/recordings/Recording_2024_08_23_17_45_21.avi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/recordings/Recording_2024_08_23_17_45_25.avi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/recordings/Recording_2024_08_23_17_45_32.avi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/recordings/Recording_2024_08_23_17_45_43.avi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/recordings/Recording_2024_08_23_17_55_22.avi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/recordings/Recording_2024_08_23_17_55_26.avi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/recordings/Recording_2024_08_23_17_55_32.avi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/recordings/Recording_2024_08_23_17_55_42.avi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/recordings/Recording_2024_08_23_17_57_54.avi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/recordings/Recording_2024_08_23_17_58_18.avi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/recordings/Recording_2024_08_23_17_59_52.avi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/recordings/Recording_2024_08_23_18_01_04.avi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/recordings/Recording_2024_08_23_18_01_09.avi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/recordings/Recording_2024_08_23_18_01_14.avi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/recordings/Recording_2024_08_23_18_01_24.avi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/recordings/Recording_2024_08_23_18_03_28.avi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/recordings/Recording_2024_08_23_18_03_52.avi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/recordings/Recording_2024_08_23_18_11_18.avi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/recordings/Recording_2024_08_23_18_11_23.avi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/recordings/Recording_2024_08_23_18_11_29.avi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/recordings/Recording_2024_08_23_18_11_39.avi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/recordings/Recording_2024_08_23_18_13_38.avi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/recordings/Recording_2024_08_23_18_13_42.avi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/recordings/Recording_2024_08_23_18_13_48.avi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/recordings/Recording_2024_08_23_18_13_58.avi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/recordings/Recording_2024_08_23_18_16_00.avi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/recordings/Recording_2024_08_23_18_16_24.avi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/recordings/Recording_2024_08_23_18_27_53.avi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/recordings/Recording_2024_08_23_18_27_57.avi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/recordings/Recording_2024_08_23_18_28_02.avi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/recordings/Recording_2024_08_23_18_28_12.avi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/recordings/Recording_2024_08_23_18_30_16.avi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/recordings/Recording_2024_08_23_18_30_40.avi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/basicTemplate/configs/baseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basicTemplate/configs/base.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/basicTemplate/configs/browserSelector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basicTemplate/configs/browserSelector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/basicTemplate/configs/extentReporterNG.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basicTemplate/configs/extentReporterTestNG.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/basicTemplate/configs/listener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basicTemplate/configs/listener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/basicTemplate/configs/myRecording.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basicTemplate/configs/recoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/basicTemplate/configs/extentReporterTestNG.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basicTemplate/configs/extentReporterTestNG.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/basicTemplate/configs/utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basicTemplate/configs/utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/basicTemplate/pages/loginPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/basicTemplate/pages/manageInvoicePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basicTemplate/pages/manageInvoice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/basicTemplate/pages/login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basicTemplate/pages/login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/basicTemplate/pages/manageInvoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basicTemplate/pages/manageInvoice.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/basicTemplate/pages/treeConfigurations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basicTemplate/pages/treeConfigurations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/feature/invoiceValidation.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/feature/manageInvoice.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/feature/loginPage.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/feature/login.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/feature/login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/login.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/feature/manageInvoice.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/manageInvoice.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/feature/treeConfiguration.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/treeConfiguration.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/runner/testRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/testRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdef/hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDef/hooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdef/loginScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDef/login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdef/manageInvoicesScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDef/manageInvoice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdef/treeConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDef/treeConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDef/hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefs/hooks/hooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDef/login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefs/login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDef/manageInvoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefs/manageInvoice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDef/treeConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefs/treeConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/configurations.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/configurations.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/extent-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/extent-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/extent.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/extent.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/Default Suite/Playwright_Java.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/Default Suite/Playwright_Java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/Default Suite/Playwright_Java.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/Default Suite/Playwright_Java.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +98,7 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$MAVEN_REPOSITORY$/com/microsoft/playwright/playwright/1.45.0/playwright-1.45.0.jar!/com/microsoft/playwright/assertions/PlaywrightAssertions.class" root0="SKIP_INSPECTION" />
     <setting file="jar://$MAVEN_REPOSITORY$/io/cucumber/cucumber-core/7.15.0/cucumber-core-7.15.0-sources.jar!/io/cucumber/core/runner/CoreStepDefinition.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$MAVEN_REPOSITORY$/io/cucumber/cucumber-core/7.15.0/cucumber-core-7.15.0-sources.jar!/io/cucumber/core/runner/ExecutionMode.java" root0="SKIP_INSPECTION" />
     <setting file="jar://$MAVEN_REPOSITORY$/io/cucumber/cucumber-core/7.15.0/cucumber-core-7.15.0-sources.jar!/io/cucumber/core/runner/PickleStepDefinitionMatch.java" root0="SKIP_INSPECTION" />
@@ -92,56 +122,77 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Cucumber Java.Feature: invoiceValidation.executor": "Debug",
-    "Cucumber Java.Feature: loginPage.executor": "Run",
-    "Cucumber Java.Feature: treeConfiguration.executor": "Debug",
-    "Cucumber Java.Scenario: Creating a new invoice.executor": "Run",
-    "Cucumber Java.Scenario: Deleting invoice.executor": "Debug",
-    "Cucumber Java.Scenario: Verify User is able to access the MRI Energy application.executor": "Run",
-    "Cucumber Java.Scenario: Verify User is redirected to correct URL.executor": "Debug",
-    "Cucumber Java.Scenario: Verify that user is able to access Invoice Validation.executor": "Run",
-    "Maven.PlaywrightWithJava [clean,install].executor": "Debug",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "TestNG.<default>.executor": "Debug",
-    "TestNG.C:/QA_Resources/Automation Projects/AutomationScripts/Playwright_Java/src/test/testng.xml (1).executor": "Debug",
-    "TestNG.C:/QA_Resources/Automation Projects/AutomationScripts/Playwright_Java/src/test/testng.xml.executor": "Debug",
-    "TestNG.C:/Users/Nishit.Sheth/AppData/Local/JetBrains/IdeaIC2024.1/temp-testng-customsuite.xml (1).executor": "Debug",
-    "TestNG.C:/Users/Nishit.Sheth/AppData/Local/JetBrains/IdeaIC2024.1/temp-testng-customsuite.xml.executor": "Debug",
-    "TestNG.Temp Suite.executor": "Debug",
-    "TestNG.loginPage (1).executor": "Debug",
-    "TestNG.loginPage.executor": "Debug",
-    "TestNG.loginPage.login.executor": "Debug",
-    "TestNG.manageInvoicePage.deleteInvoice.executor": "Run",
-    "TestNG.manageInvoicePage.executor": "Run",
-    "TestNG.manageInvoicePage.redirectToInvoiceList.executor": "Debug",
-    "TestNG.testRunner.executor": "Debug",
-    "TestNG.testRunner.runScenario (1).executor": "Debug",
-    "TestNG.testRunner.runScenario (2).executor": "Run",
-    "TestNG.testRunner.runScenario.executor": "Debug",
-    "TestNG.treeConfigurations.configTree.executor": "Run",
-    "TestNG.treeConfigurations.executor": "Run",
-    "com.google.cloudcode.ide_session_index": "20240814_0000",
-    "deletionFromPopupRequiresConfirmation": "false",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/QA_Resources/Automation Projects/AutomationScripts/Playwright_Java",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Cucumber Java.Feature: invoiceValidation.executor&quot;: &quot;Debug&quot;,
+    &quot;Cucumber Java.Feature: loginPage.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Feature: manageInvoice.executor&quot;: &quot;Debug&quot;,
+    &quot;Cucumber Java.Feature: treeConfiguration.executor&quot;: &quot;Debug&quot;,
+    &quot;Cucumber Java.Scenario: Creating a new invoice.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Deleting invoice.executor&quot;: &quot;Debug&quot;,
+    &quot;Cucumber Java.Scenario: Verify User is able to access the MRI Energy application.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Verify User is redirected to correct URL.executor&quot;: &quot;Debug&quot;,
+    &quot;Cucumber Java.Scenario: Verify that user is able to access Invoice Validation.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.PlaywrightWithJava [clean,install].executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;TestNG.&lt;default&gt;.executor&quot;: &quot;Debug&quot;,
+    &quot;TestNG.C:/QA_Resources/Automation Projects/AutomationScripts/Playwright_Java/src/test/testng.xml (1).executor&quot;: &quot;Debug&quot;,
+    &quot;TestNG.C:/QA_Resources/Automation Projects/AutomationScripts/Playwright_Java/src/test/testng.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.C:/Users/Nishit.Sheth/AppData/Local/JetBrains/IdeaIC2024.1/temp-testng-customsuite.xml (1).executor&quot;: &quot;Debug&quot;,
+    &quot;TestNG.C:/Users/Nishit.Sheth/AppData/Local/JetBrains/IdeaIC2024.1/temp-testng-customsuite.xml.executor&quot;: &quot;Debug&quot;,
+    &quot;TestNG.Temp Suite.executor&quot;: &quot;Debug&quot;,
+    &quot;TestNG.loginPage (1).executor&quot;: &quot;Debug&quot;,
+    &quot;TestNG.loginPage.executor&quot;: &quot;Debug&quot;,
+    &quot;TestNG.loginPage.login.executor&quot;: &quot;Debug&quot;,
+    &quot;TestNG.manageInvoicePage.deleteInvoice.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.manageInvoicePage.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.manageInvoicePage.redirectToInvoiceList.executor&quot;: &quot;Debug&quot;,
+    &quot;TestNG.testRunner.executor&quot;: &quot;Debug&quot;,
+    &quot;TestNG.testRunner.runScenario (1).executor&quot;: &quot;Debug&quot;,
+    &quot;TestNG.testRunner.runScenario (2).executor&quot;: &quot;Debug&quot;,
+    &quot;TestNG.testRunner.runScenario (3).executor&quot;: &quot;Debug&quot;,
+    &quot;TestNG.testRunner.runScenario.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.treeConfigurations.configTree.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.treeConfigurations.executor&quot;: &quot;Run&quot;,
+    &quot;com.google.cloudcode.ide_session_index&quot;: &quot;20240814_0000&quot;,
+    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/QA_Resources/Automation Projects/AutomationScripts/Playwright_Java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\QA_Resources\Automation Projects\AutomationScripts\Playwright_Java\executionReport" />
     </key>
   </component>
   <component name="RunManager" selected="TestNG.C:/QA_Resources/Automation Projects/AutomationScripts/Playwright_Java/src/test/testng.xml">
+    <configuration name="Feature: manageInvoice" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/features/manageInvoice.feature" />
+      <option name="GLUE" value="stepDef" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="PlaywrightWithJava" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: manageInvoice" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="C:/QA_Resources/Automation Projects/AutomationScripts/Playwright_Java/src/test/testng.xml" type="TestNG" singleton="false" nameIsGenerated="true" show_console_on_std_err="true" show_console_on_std_out="true">
       <shortenClasspath name="NONE" />
       <useClassPathOnly />
@@ -157,35 +208,6 @@
         <value defaultName="wholeProject" />
       </option>
       <option name="USE_DEFAULT_REPORTERS" value="true" />
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners>
-        <listener class="basicTemplate.configs.listener" />
-      </listeners>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="testRunner" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="PlaywrightWithJava" />
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="runner.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="runner" />
-      <option name="MAIN_CLASS_NAME" value="runner.testRunner" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
       <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners>
@@ -226,14 +248,14 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Cucumber Java.Feature: manageInvoice" />
       <item itemvalue="TestNG.C:/QA_Resources/Automation Projects/AutomationScripts/Playwright_Java/src/test/testng.xml" />
       <item itemvalue="TestNG.testRunner.runScenario" />
-      <item itemvalue="TestNG.testRunner" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.testRunner" />
-        <item itemvalue="TestNG.C:/QA_Resources/Automation Projects/AutomationScripts/Playwright_Java/src/test/testng.xml" />
+        <item itemvalue="TestNG.testRunner.runScenario" />
+        <item itemvalue="Cucumber Java.Feature: manageInvoice" />
       </list>
     </recent_temporary>
   </component>
@@ -290,20 +312,20 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/basicTemplate/configs/listener.java</url>
           <line>76</line>
           <option name="timeStamp" value="94" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/testng/testng/7.9.0/testng-7.9.0-sources.jar!/org/testng/internal/TestListenerHelper.java</url>
           <line>117</line>
           <option name="timeStamp" value="101" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/basicTemplate/configs/listener.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="102" />
+          <url>file://$PROJECT_DIR$/src/test/java/stepDefs/treeConfiguration.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="119" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

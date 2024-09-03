@@ -11,7 +11,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 
-public class utils extends baseClass {
+public class utils extends base {
 
     public static void clickOnElement(String element) {
         isElementPresent(element);
@@ -32,6 +32,12 @@ public class utils extends baseClass {
             clickOnElement(element);
             page.locator(element).fill(inputText);
         }
+    }
+
+    public static String getText(String element){
+         String text = String.valueOf(page.getByText(element));
+        return text;
+
     }
 
     public static String timeStamp() {
