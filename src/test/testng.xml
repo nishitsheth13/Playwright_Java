@@ -29,7 +29,7 @@
     <test name="Tree Configuration runner Tests " >
         <parameter name="Browser" value="chrome"/>
         <classes>
-            <class name="basicTemplate.pages.manageInvoice"/>
+            <class name="basicTemplate.pages.login"/>
         </classes>
     </test>
 

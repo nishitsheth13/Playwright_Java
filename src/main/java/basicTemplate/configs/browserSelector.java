@@ -27,7 +27,7 @@ public class browserSelector extends base {
                     .setArgs(Collections.singletonList("--start-maximized"))
                     .setHeadless(headless));
 
-            Path videoDir = Paths.get(System.getProperty("user.dir") + "/recordings/");
+            Path videoDir = Paths.get(System.getProperty("user.dir") + "/MRITestExecutionReports/" + loadProps.getProperty("Version") + "/recordings/");
             if (!Files.exists(videoDir)) {
                 Files.createDirectories(videoDir);
             }
@@ -51,7 +51,7 @@ public class browserSelector extends base {
                     .setChannel("msedge")
                     .setArgs(Collections.singletonList("--start-maximized"))
                     .setHeadless(headless));
-            Path videoDir = Paths.get(System.getProperty("user.dir") + "/recordings/");
+            Path videoDir = Paths.get(System.getProperty("user.dir") + "/MRITestExecutionReports/" + loadProps.getProperty("Version") + "/recordings/");
             if (!Files.exists(videoDir)) {
                 Files.createDirectories(videoDir);
             }
@@ -67,12 +67,13 @@ public class browserSelector extends base {
             }
 
             page.navigate(URL);
+
         } else if (brows.equalsIgnoreCase("firefox")) {
             Playwright playwright = Playwright.create();
             Browser browser = playwright.firefox().launch(new BrowserType.LaunchOptions()
                     .setArgs(Collections.singletonList("--start-maximized"))
                     .setHeadless(headless));
-            Path videoDir = Paths.get(System.getProperty("user.dir") + "/recordings/");
+            Path videoDir = Paths.get(System.getProperty("user.dir") + "/MRITestExecutionReports/" + loadProps.getProperty("Version") + "/recordings/");
             if (!Files.exists(videoDir)) {
                 Files.createDirectories(videoDir);
             }
@@ -91,6 +92,7 @@ public class browserSelector extends base {
         } else {
             System.out.println("This Browser is not found in your system.");
         }
+
 
     }
 
@@ -125,7 +127,7 @@ public class browserSelector extends base {
                     .setArgs(Collections.singletonList("--start-maximized"))
                     .setHeadless(headless));
 
-            Path videoDir = Paths.get(System.getProperty("user.dir") + "/recordings/");
+            Path videoDir = Paths.get(System.getProperty("user.dir") + "/MRITestExecutionReports/" + loadProps.getProperty("Version") + "/recordings/");
             if (!Files.exists(videoDir)) {
                 Files.createDirectories(videoDir);
             }
@@ -150,7 +152,7 @@ public class browserSelector extends base {
                     .setChannel("msedge")
                     .setArgs(Collections.singletonList("--start-maximized"))
                     .setHeadless(headless));
-            Path videoDir = Paths.get(System.getProperty("user.dir") + "/recordings/");
+            Path videoDir = Paths.get(System.getProperty("user.dir") + "/MRITestExecutionReports/" + loadProps.getProperty("Version") + "/recordings/");
             if (!Files.exists(videoDir)) {
                 Files.createDirectories(videoDir);
             }
@@ -172,7 +174,7 @@ public class browserSelector extends base {
             Browser browser = playwright.firefox().launch(new BrowserType.LaunchOptions()
                     .setArgs(Collections.singletonList("--start-maximized"))
                     .setHeadless(headless));
-            Path videoDir = Paths.get(System.getProperty("user.dir") + "/recordings/");
+            Path videoDir = Paths.get(System.getProperty("user.dir") + "/MRITestExecutionReports/" + loadProps.getProperty("Version") + "/recordings/");
             if (!Files.exists(videoDir)) {
                 Files.createDirectories(videoDir);
             }

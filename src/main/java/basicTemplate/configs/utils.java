@@ -41,7 +41,7 @@ public class utils extends base {
     }
 
     public static String timeStamp() {
-        DateFormat dateFormat = new SimpleDateFormat("MM_DD_YYYY_HHmmss");
+        DateFormat dateFormat = new SimpleDateFormat("MM_DD_YYYY_HHmm");
         Date date = new Date();
         return dateFormat.format(date);
     }
@@ -53,15 +53,15 @@ public class utils extends base {
 
     public static void UploadFile(String by, String args) {
         Locator fileInput = page.locator(by);
-        fileInput.setInputFiles(Paths.get("C://QA_Resources//Automation Projects//AutomationScripts//Playwright_Java//extentReports//extentCucumberReports//pdfReport//extentPdf.pdf"));
+        fileInput.setInputFiles(Paths.get(System.getProperty("user.dir") + "/MRITestExecutionReports/" + loadProps.getProperty("Version") + "//extentReports//cucumberExtentReports//pdf//Pdf.pdf"));
     }
 
     public String getScreenShotPath(String TestName) throws IOException, AWTException {
         page.screenshot(new Page.ScreenshotOptions()
-                .setPath(Paths.get("C://QA_Resources//Automation Projects/AutomationScripts/Playwright_Java/extentReports/extentTestNGReports" + "/screenShots/" + TestName + utils.timeStamp() + ".png"))
+                .setPath(Paths.get(System.getProperty("user.dir") + "/MRITestExecutionReports/" + loadProps.getProperty("Version") + "/screenShots/" + TestName + "_" + utils.timeStamp() + ".png"))
                 .setFullPage(true));
 
-        String destPath = "../screenShots/" + TestName + utils.timeStamp() + ".png";
+        String destPath = "/MRITestExecutionReports/" + loadProps.getProperty("Version") + "/screenShots/" + TestName + "_" + utils.timeStamp() + ".png";
 
         return destPath;
     }
