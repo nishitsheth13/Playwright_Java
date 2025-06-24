@@ -5,7 +5,6 @@ import basicTemplate.configs.loadProps;
 import basicTemplate.configs.utils;
 import org.testng.annotations.*;
 
-import static basicTemplate.pages.login.username;
 import static java.lang.Thread.sleep;
 
 public class manageInvoice extends utils {
@@ -232,7 +231,7 @@ public class manageInvoice extends utils {
         clickOnElement(clickOnAttachmentIcon);
         sleep(1000);
         clickOnElement(clickOnAddAttachment);
-        sleep(1000);
+        sleep(2000);
         UploadFile(selectFileManager, selectFileInFileManager);
         sleep(2000);
         clickOnElement(clickOnUploadAttachment);

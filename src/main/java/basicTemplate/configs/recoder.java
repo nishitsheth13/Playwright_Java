@@ -33,7 +33,7 @@ public class recoder extends ScreenRecorder {
     }
 
     public static void startRecording() throws Exception {
-        File file = new File("./Recordings/");
+        File file = new File(System.getProperty("user.dir") + "/MRITestExecutionReports/" + loadProps.getProperty("Version") + "/recordings/");
 
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
         int width = screenSize.width;
